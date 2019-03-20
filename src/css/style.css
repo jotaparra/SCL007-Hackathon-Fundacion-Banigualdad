@@ -66,4 +66,42 @@ img.img-responsive {
 .rojo-googlemas{
     background-color: #ea4335;
 }
-/* finaliza estilos del login */
+
+
+/* pagina principal/vitrina */
+
+#navbar{
+    background-color: #0082d8;
+   
+}
+
+#linkEmprendedor{
+    color: white;
+}
+
+#logotype{
+    margin: 1rem;
+    margin-bottom: 1rem;
+}
+
+.map{
+    width: auto;
+    margin-top: 1rem;
+    
+}
+
+#shopping-bag{
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    margin: 0 auto;
+   
+}
+
+
+#viewStore{
+    display:none;
+}
+
+
+
