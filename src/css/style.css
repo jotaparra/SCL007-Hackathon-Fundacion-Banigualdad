@@ -1,0 +1,80 @@
+/* estilos del login */
+.container {
+    display: grid;
+    justify-content: center;
+}
+img.img-responsive {
+    margin: auto
+}
+.inputs {
+    margin: 0px auto;
+    display: grid;
+    justify-content: center;
+    
+}
+#login form input, button {
+    border: 1px solid #898989;
+    width: 100%;
+    display: block;
+    -webkit-border-radius: 20px;       /* especificaciones para safari, opera, chrome */
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    padding: 10px 0;
+    margin: 1.2em auto;
+}
+#login form input {
+    background: #C4C4C4;
+    text-align: center;
+}
+#login form button {
+    background: -webkit-linear-gradient(left,#116ebf 0%, #1291cc 100%);
+    box-sizing: border-box;
+    color: #ffffff;
+}
+#login form button:hover {
+    opacity: 0.6;
+    transition: 0.4s;
+}
+.logos-rrss {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+.logos-rrss a {
+    font-size: 25px;
+    color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px;
+    text-decoration: none;
+}
+.logos-rrss a:hover{
+    opacity: 0.6;
+    text-decoration: none;
+    transition: 0.4s;
+}
+.azul-facebook{
+    background-color: #3b5998;
+}
+.celeste-twitter{
+    background-color: #1da1f2;
+}
+.rojo-googlemas{
+    background-color: #ea4335;
+}
+/* finaliza estilos del login */
+Contraer
+
+
+
+Entrada de mensaje
+
+
+Enviar mensaje a Jotaparra
+
+Sobre esta conversación
+
