@@ -20,7 +20,7 @@ export const registerUser = (email, password) => {
 
 export const loginUserWithEmail = (email, password) => {
     firebase.auth().signInWithEmailAndPassword(email, password)
-        //.catch(error => document.getElementById('error-m').innerHTML = `${error.message}`)
+        .catch(error => document.getElementById('error-m').innerHTML = `${error.message}`)
 };
 export const signOut = () => {
     firebase.auth().signOut().then(function () {
