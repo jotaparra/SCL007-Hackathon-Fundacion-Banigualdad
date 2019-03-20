@@ -1,4 +1,4 @@
-import {checkAuthState, registerUser, loginUserWithEmail} from './auth.js';
+import {checkAuthState, registerUser, loginUserWithEmail, signOut} from './auth.js';
 window.onload = () =>{     
       checkAuthState((user) => {
          if(user){
@@ -24,3 +24,9 @@ const signInWithEmailAndPassword = () => {
    loginUserWithEmail(emailUser, passwordUser);
 };
 document.getElementById('btnSignUp').addEventListener('click', signInWithEmailAndPassword);
+
+const logOut = () => {
+   //console.log("Ud cerr  o sesión")
+   signOut()
+}
+document.getElementById('btnLogout').addEventListener('click', logOut);
