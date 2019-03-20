@@ -1,0 +1,88 @@
+#navbar{
+    background-color: #0082d8;
+   
+}
+
+#linkEmprendedor{
+    color: white;
+}
+
+#logotype{
+    margin: 1rem;
+    margin-bottom: 1rem;
+}
+
+.map{
+    width: auto;
+    margin-top: 1rem;
+    
+}
+
+#shopping-bag{
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    margin: 0 auto;
+   
+}
+
+
+
+#viewStore{
+    display:none;
+}
+/* .slider{
+    width: 100%;
+    margin: 0px;
+   overflow: hidden;
+}
+
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    margin: -4px;
+    animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+    margin: -8px;
+}
+
+.slider img {
+    width: 100%;
+    height: 300px;
+}
+
+@keyframes cambio {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+} */
+
+#search{
+   text-align: center;
+}
+
+.btn-outline-secondary {
+    color: #74c75b;
+    border-color: #74c75b;
+}
+
+#selectOption{
+    margin-top: 1.5rem;
+}
+
+select#inputGroupSelect04.custom-select{
+    width: 200px;
+}
