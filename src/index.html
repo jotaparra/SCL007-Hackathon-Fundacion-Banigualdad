@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Fundación Banigualdad</title>
 </head>
 
@@ -18,15 +20,262 @@
     </header>
     <!-- Finaliza header -->
     <!-- Comienzo navegación -->
-    <nav>
+    <nav id="navbar">
+        <div class="nav-wrapper">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a id="linkEmprendedor" class="nav-link active" href="#">Si eres emprendedor, ingresa aquí</a>
+                </li>
+            </ul>
+        </div>
     </nav>
+   
     <!-- Finaliza Navegación -->
     <!-- Comienzo section -->
 
     <!--Home primera pagina-->
-    <section id="home">
+        <section id="home">
 
-    </section>
+            <div id="logotype">
+                <a class="brand-logo"><img class="mk-desktop-logo dark-logo "
+                        title="Apoyamos emprendedores con microcrédito y capacitación"
+                        alt="Apoyamos emprendedores con microcrédito y capacitación"
+                        src="https://www.banigualdad.cl/wp-content/uploads/2017/12/logo_web-01.png"></a>
+    
+            </div>
+            <!--mapa pagina principal-->
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7804075.836032351!2d-74.34103291444886!3d-27.668595987251006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5410425af2f%3A0x505e1131102b91d!2sChile!5e0!3m2!1ses-419!2scl!4v1553095963180"
+                    width="1500" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            
+            
+            <!--productos recien agregados-->
+            <!--Carousel Wrapper-->
+    <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+    
+            <!--Controls-->
+            <div class="controls-top">
+              <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
+              <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fas fa-chevron-right"></i></a>
+            </div>
+            <!--/.Controls-->
+          
+            <!--Indicators-->
+            <ol class="carousel-indicators">
+              <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+              <li data-target="#multi-item-example" data-slide-to="1"></li>
+              <li data-target="#multi-item-example" data-slide-to="2"></li>
+            </ol>
+            <!--/.Indicators-->
+          
+            <!--Slides-->
+            <div class="carousel-inner" role="listbox">
+          
+              <!--First slide-->
+              <div class="carousel-item active">
+          
+                <div class="col-md-4">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-title">Card title</h4>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                      <a class="btn btn-primary">Button</a>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="col-md-4">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-title">Card title</h4>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                      <a class="btn btn-primary">Button</a>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="col-md-4">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-title">Card title</h4>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                      <a class="btn btn-primary">Button</a>
+                    </div>
+                  </div>
+                </div>
+          
+              </div>
+              <!--/.First slide-->
+          
+              <!--Second slide-->
+              <h2 id="productsTitle">Productos Recientemente Agregados</h2>
+              
+              <div class="carousel-item">
+          
+                <div class="col-md-4">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-title">Card title</h4>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                      <a class="btn btn-primary">Button</a>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="col-md-4">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-title">Card title</h4>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                      <a class="btn btn-primary">Button</a>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="col-md-4">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-title">Card title</h4>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                      <a class="btn btn-primary">Button</a>
+                    </div>
+                  </div>
+                </div>
+          
+              </div>
+              <!--/.Second slide-->
+          
+              <!--Third slide-->
+              <div class="carousel-item">
+          
+                <div class="col-md-4">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-title">Card title</h4>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                      <a class="btn btn-primary">Button</a>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="col-md-4">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(45).jpg"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-title">Card title</h4>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                      <a class="btn btn-primary">Button</a>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="col-md-4">
+                  <div class="card mb-2">
+                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(51).jpg"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <h4 class="card-title">Card title</h4>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                      <a class="btn btn-primary">Button</a>
+                    </div>
+                  </div>
+                </div>
+          
+              </div>
+              <!--/.Third slide-->
+          
+            </div>
+            <!--/.Slides-->
+          
+          </div>
+          <!--/.Carousel Wrapper-->
+            <!--ver más- ir a tienda-->
+            <div id="more">
+                <a href="" class="icon col-xs-3 col-sm-4">
+                    <img id="shopping-bag" src="https://i.ibb.co/Gk4L9s0/shopping-bag-1.png" alt="shopping-bag">
+                </a>
+                <p>Ver más</p>
+            </div>
+    
+    
+            </div>
+    
+            <!--Vitrina de emprendedores y sus productos-->
+            <section id="viewStore">
+    
+                <div id="search">
+    
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+    
+                <div id="selectOption" class="container">
+                    <div class="row">
+    
+                        <div id="categories" class="col-sm-12, col-md-12, col-lg-6">
+                            <div class="input-group">
+                                <select class="custom-select" id="inputGroupSelect04"
+                                    aria-label="Example select with button addon">
+                                    <option selected>Choose...</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary" type="button">Button</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="zone" class="col-sm-12, col-md-12, col-lg-6">
+                            <div class="input-group">
+                                <select class="custom-select" id="inputGroupSelect04"
+                                    aria-label="Example select with button addon">
+                                    <option selected>Choose...</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary" type="button">Button</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+    
+            </section>
+    
+        </section>
+    
 
     <!--Formulario de ingreso para los emprendedores-->
     <section id="login" class="container">
@@ -92,11 +341,13 @@
     <footer>
 
     </footer>
-    <!-- Finaliza footer -->
 
+    <!-- Finaliza footer Ana  -->
     <script src="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
-    <script>
+ 
+    <script> 
+
         const config = {
             apiKey: "AIzaSyC6-D_wOl0xwxRoVaSQBrIKMBdHiU4BDu0",
             authDomain: "banigualdad-d5784.firebaseapp.com",
@@ -104,14 +355,24 @@
             projectId: "banigualdad-d5784",
             storageBucket: "banigualdad-d5784.appspot.com",
             messagingSenderId: "250712200354"
+    
         };
         firebase.initializeApp(config);
     </script>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 
     <script src="./JS/index.js" type="module"></script>
     <script src="./JS/main.js" type="module"></script>
     <script src="./JS/auth.js" type="module"></script>
+
+
 </body>
 
-</html>

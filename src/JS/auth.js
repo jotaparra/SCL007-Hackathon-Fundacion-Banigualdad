@@ -14,7 +14,7 @@ export const registerUser = (email, password) => {
         .then(function () {
             console.log('click')
         })
-        .catch(error => document.getElementById('error-m').innerHTML = `${error.message}`)
+        // .catch(error => document.getElementById('error-m').innerHTML = `${error.message}`)
 };
 
 
