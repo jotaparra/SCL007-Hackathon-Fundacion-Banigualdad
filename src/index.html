@@ -1,5 +1,6 @@
 
 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -53,187 +54,179 @@
         <!--productos recien agregados-->
 
         
-        <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
-            <!-- estos dos div hay que analizar para el modal -->
+        <!--Carousel Wrapper-->
+    <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
 
-            <div class="carousel-inner" role="listbox">
+      <!--Controls-->
+      <div class="controls-top">
+        <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
+        <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fas fa-chevron-right"></i></a>
+      </div>
+      <!--/.Controls-->
 
-                <!--First slide-->
+      <!--Indicators-->
+      <ol class="carousel-indicators">
+        <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+        <li data-target="#multi-item-example" data-slide-to="1"></li>
+        <li data-target="#multi-item-example" data-slide-to="2"></li>
+      </ol>
+      <!--/.Indicators-->
 
-                <div>
-                    <h2 id="productsTitle" class="textTitle">Productos Recientemente Agregados</h2>
-                </div>
+      <!--Slides-->
+      <div class="carousel-inner" role="listbox">
 
-                <div class="controls-top">
-                    <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
-                    <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fas fa-chevron-right"></i></a>
-                </div>
+        <!--First slide-->
+        <h2 id="productsTitle">Productos Recientemente Agregados</h2>
+        <div class="carousel-item active">
 
-
-                <div class="carousel-item active">
-
-                    <ol class="carousel-indicators">
-                        <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
-                        <li data-target="#multi-item-example" data-slide-to="1"></li>
-                        <li data-target="#multi-item-example" data-slide-to="2"></li>
-                    </ol>
-
-
-
-                    <div class="col-md-4">
-                        <div class="card mb">
-                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h4 class="card-title">Hola</h4>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the
-                                    card's content.</p>
-                                <a class="btn btn-primary">Ver más</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card mb">
-                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h4 class="card-title">Card title</h4>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the
-                                    card's content.</p>
-                                <a class="btn btn-primary">Ver más</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card mb">
-                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h4 class="card-title">Card title</h4>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the
-                                    card's content.</p>
-                                <a class="btn btn-primary">Ver más</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <!--/.First slide-->
-
-                <!--Second slide-->
-
-                <div class="carousel-item">
-
-                    <div class="col-md-4">
-                        <div class="card mb-2">
-                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h4 class="card-title">Card title</h4>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the
-                                    card's content.</p>
-                                <a class="btn btn-primary">Ver más</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card mb-2">
-                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h4 class="card-title">Card title</h4>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the
-                                    card's content.</p>
-                                <a class="btn btn-primary">Ver más</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card mb-2">
-                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h4 class="card-title">Card title</h4>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the
-                                    card's content.</p>
-                                <a class="btn btn-primary">Ver más</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <!--/.Second slide-->
-
-                <!--Third slide-->
-                <div class="carousel-item">
-
-                    <div class="col-md-4">
-                        <div class="card mb-2">
-                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h4 class="card-title">Card title</h4>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the
-                                    card's content.</p>
-                                <a class="btn btn-primary">Ver más</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card mb-2">
-                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(45).jpg"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h4 class="card-title">Card title</h4>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the
-                                    card's content.</p>
-                                <a class="btn btn-primary">Ver más</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card mb-2">
-                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(51).jpg"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h4 class="card-title">Card title</h4>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the
-                                    card's content.</p>
-                                <a class="btn btn-primary">Ver más</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <!--/.Third slide-->
-
+          <div class="col-md-4">
+            <div class="card mb-2">
+              <img class="card-img-top" src="https://informacionimagenes.net/wp-content/uploads/2017/11/Adornos-navide%C3%B1os-tejidos-al-crochet-8.jpg"
+                alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Artesania y Manualidades</h4>
+                <h5 class="card-title">Magdalena Durán (Peñalolén)</h5>
+                <p class="card-text">Adornos Navideños diseñados con amor y dedicación</p>
+                <a class="btn btn-primary">Contactame</a>
+              </div>
             </div>
-            <!--/.Slides-->
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-2">
+              <img class="card-img-top" src="https://www.mimorelia.com/wp-content/uploads/07/noticias/morelia/22/alfareros.jpg"
+                alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Artesania y Manualidades</h4>
+                <h5 class="card-title">Solange Céspedes (Pomaire)</h5>
+                <p class="card-text">Talleres y trabajos de Alfareria.</p>
+                <a class="btn btn-primary">Contactame</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-2">
+              <img class="card-img-top" src="http://www.integrare.cl/images/sobipro/entries/829/thumb_images.jpg"
+                alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Salud, Terapia y Belleza</h4>
+                <h5 class="card-title">Guadalupe Hernández (Lo Abarca)</h5>
+                <p class="card-text">Productos naturales con características innovadoras en salud y belleza.</p>
+                <a class="btn btn-primary">Contactame</a>
+              </div>
+            </div>
+          </div>
 
         </div>
+        <!--/.First slide-->
+
+        <!--Second slide-->
+
+        <div class="carousel-item">
+
+          <div class="col-md-4">
+            <div class="card mb-2">
+              <img class="card-img-top" src="https://jamoneriasuiza.com/wp-content/uploads/2016/11/IMG_5950-copia.jpg"
+                alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Comida - Queso de Cabeza</h4>
+                <h5 class="card-title">María Cristina Gómez (Maule)</h5>
+                <p class="card-text">Jamón elaborado con una selección de las mejores cabezas de cerdo.</p>
+                <a class="btn btn-primary">Contactame</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-2">
+              <img class="card-img-top" src="https://t1.rg.ltmcdn.com/es/images/2/0/0/img_super_arrollado_de_carne_44002_600.jpg"
+                alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Comida - Arrollado de Carne</h4>
+                <h5 class="card-title">Centro “La amistad”. (Valparaiso)</h5>
+                <p class="card-text">Ricos arrollados rellenos para los amates de la carne.</p>
+                <a class="btn btn-primary">Contactame</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-2">
+              <img class="card-img-top" src="https://previews.123rf.com/images/wihtgod/wihtgod1203/wihtgod120300147/12944627-un-mont%C3%B3n-de-bocadillos-fr%C3%ADos-en-la-mesa-de-buffet-catering.jpg"
+                alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Comida - Banqueteria</h4>
+                <h5 class="card-title"> Marisol Burgos (Maule)</h5>
+                <p class="card-text">Servicio de banquetería o de banquetes para eventos.</p>
+                <a class="btn btn-primary">Contactame</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!--/.Second slide-->
+
+        <!--Third slide-->
+        <div class="carousel-item">
+
+          <div class="col-md-4">
+            <div class="card mb-2">
+              <img class="card-img-top" src="https://i.ibb.co/GHVD1s4/plastico.jpg
+                alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Locales y Comercios - Productos Plasticos</h4>
+                <h5 class="card-title"> Ricardo Vergara (Santiago)</h5>
+                <p class="card-text">Productos Pasticos y de Aluminio Desechable para Alimentos.</p>
+                <a class="btn btn-primary">Contactame</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-2">
+              <img class="card-img-top" src="https://i.ibb.co/y4S7J2S/herramienta.jpg"
+                alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Locales y Comercios - Herramientas </h4>
+                <h5 class="card-title"> Magaly Arratia (Santiago)</h5>
+                <p class="card-text">Venta de todo tipo de herramientas para manualidades.</p>
+                <a class="btn btn-primary">Contactame</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-2">
+              <img class="card-img-top" src="https://i.ibb.co/9tZRDYV/lavanderia.jpg"
+                alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Casa y Jardin - Lavanderia</h4>
+                <h5 class="card-title"> María Lillo. (San Antonio)</h5>
+                <p class="card-text">Servicio de lavado de ropa, manteles y  uniformes.</p>
+                <a class="btn btn-primary">Contactame</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!--/.Third slide-->
+
+      </div>
+      <!--/.Slides-->
+
+    </div>
+    <!--/.Carousel Wrapper-->
+    <!--ver más- ir a tienda-->
+    <div id="more">
+      <a href="" class="icon col-xs-3 col-sm-4">
+        <img id="shopping-bag" src="https://i.ibb.co/Gk4L9s0/shopping-bag-1.png" alt="shopping-bag">
+      </a>
+      <p>Ver más</p>
+    </div>
 
 
-        <input id="moreproduct" type="image" class="moreproduct" src="https://i.ibb.co/Gk4L9s0/shopping-bag-1.png" alt="shopping-bag">
-        </input>
-        <p class="textmore"> Ver más</p>
-
-    </section>
-
+    </div>
 
     <!--Formulario de ingreso para los emprendedores-->
 
@@ -980,4 +973,5 @@
 
 
 </body>
+
 
