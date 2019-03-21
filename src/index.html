@@ -5,10 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Fundación Banigualdad</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css" />
+    <title>Fundación Banigualdad</title>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2.0/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
+
 </head>
 
 <body>
@@ -29,9 +39,11 @@
     </nav>
 
     <!-- Finaliza Navegación -->
+
     <!-- Comienzo section -->
 
     <!--Home primera pagina-->
+
     <section id="home">
 
         <div id="logotype">
@@ -45,250 +57,117 @@
         <div class="map">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7804075.836032351!2d-74.34103291444886!3d-27.668595987251006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5410425af2f%3A0x505e1131102b91d!2sChile!5e0!3m2!1ses-419!2scl!4v1553095963180"
-                width="1500" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
+
 
 
         <!--productos recien agregados-->
 
-        <div>
+        <!--Aquí ira el carrousel-->
 
-            <!--Carousel Wrapper-->
-<div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
-
-        <!--Controls-->
-        <div class="controls-top">
-          <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
-          <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fas fa-chevron-right"></i></a>
-        </div>
-        <!--/.Controls-->
-      
-        <!--Indicators-->
-        <ol class="carousel-indicators">
-          <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
-          <li data-target="#multi-item-example" data-slide-to="1"></li>
-          <li data-target="#multi-item-example" data-slide-to="2"></li>
-        </ol>
-        <!--/.Indicators-->
-      
-        <!--Slides-->
-        <div class="carousel-inner" role="listbox">
-      
-          <!--First slide-->
-          <div class="carousel-item active">
-      
-            <div class="col-md-4">
-              <div class="card mb-2">
-                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
-                  alt="Card image cap">
-                <div class="card-body">
-                  <h4 class="card-title">Card title</h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                  <a class="btn btn-primary">Button</a>
-                </div>
-              </div>
-            </div>
-      
-            <div class="col-md-4">
-              <div class="card mb-2">
-                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
-                  alt="Card image cap">
-                <div class="card-body">
-                  <h4 class="card-title">Card title</h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                  <a class="btn btn-primary">Button</a>
-                </div>
-              </div>
-            </div>
-      
-            <div class="col-md-4">
-              <div class="card mb-2">
-                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
-                  alt="Card image cap">
-                <div class="card-body">
-                  <h4 class="card-title">Card title</h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                  <a class="btn btn-primary">Button</a>
-                </div>
-              </div>
-            </div>
-      
-          </div>
-          <!--/.First slide-->
-      
-          <!--Second slide-->
-          <div class="carousel-item">
-      
-            <div class="col-md-4">
-              <div class="card mb-2">
-                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg"
-                  alt="Card image cap">
-                <div class="card-body">
-                  <h4 class="card-title">Card title</h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                  <a class="btn btn-primary">Button</a>
-                </div>
-              </div>
-            </div>
-      
-            <div class="col-md-4">
-              <div class="card mb-2">
-                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg"
-                  alt="Card image cap">
-                <div class="card-body">
-                  <h4 class="card-title">Card title</h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                  <a class="btn btn-primary">Button</a>
-                </div>
-              </div>
-            </div>
-      
-            <div class="col-md-4">
-              <div class="card mb-2">
-                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg"
-                  alt="Card image cap">
-                <div class="card-body">
-                  <h4 class="card-title">Card title</h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                  <a class="btn btn-primary">Button</a>
-                </div>
-              </div>
-            </div>
-      
-          </div>
-          <!--/.Second slide-->
-      
-          <!--Third slide-->
-          <div class="carousel-item">
-      
-            <div class="col-md-4">
-              <div class="card mb-2">
-                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"
-                  alt="Card image cap">
-                <div class="card-body">
-                  <h4 class="card-title">Card title</h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                  <a class="btn btn-primary">Button</a>
-                </div>
-              </div>
-            </div>
-      
-            <div class="col-md-4">
-              <div class="card mb-2">
-                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(45).jpg"
-                  alt="Card image cap">
-                <div class="card-body">
-                  <h4 class="card-title">Card title</h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                  <a class="btn btn-primary">Button</a>
-                </div>
-              </div>
-            </div>
-      
-            <div class="col-md-4">
-              <div class="card mb-2">
-                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(51).jpg"
-                  alt="Card image cap">
-                <div class="card-body">
-                  <h4 class="card-title">Card title</h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
-                  <a class="btn btn-primary">Button</a>
-                </div>
-              </div>
-            </div>
-      
-          </div>
-          <!--/.Third slide-->
-      
-        </div>
-        <!--/.Slides-->
-      
-      </div>
-      <!--/.Carousel Wrapper-->
-
-        </div>
         <!--ver más- ir a tienda-->
         <div id="more">
             <a href="" class="icon col-xs-3 col-sm-4">
                 <img id="shopping-bag" src="https://i.ibb.co/Gk4L9s0/shopping-bag-1.png" alt="shopping-bag">
             </a>
-            <p>Ver más</p>
+            <p id="moreProducts">Ver más productos</p>
         </div>
 
+    </section>
 
+
+    <!--Vitrina de emprendedores y sus productos-->
+    <section id="viewStore">
+
+        
+        <!-- Search form -->
+
+        <div id="search">
+            <form class="form-inline ">
+                <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search"
+                    aria-label="Search">
+                <i class="fas fa-search" aria-hidden="true"></i>
+            </form>
         </div>
+    
+        <div class="container">
+            <div class="row">
 
-        <!--Vitrina de emprendedores y sus productos-->
-        <section id="viewStore">
+                <div id="select-category" class="col-sm-12 col-md-12 col-lg-6">
 
-            <div id="search">
 
-                <form class="form-inline">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-            </div>
+                    <select class="browser-default custom-select">
+                        <option selected>Elige una categoria</option>
+                        <option value="1">Servicios</option>
+                        <option value="2">Productos</option>
+                        <option value="3">Bazar</option>
+                    </select>
 
-            <div id="selectOption" class="container">
-                <div class="row">
-
-                    <div id="categories" class="col-sm-12, col-md-12, col-lg-6">
-                        <div class="input-group">
-                            <select class="custom-select" id="inputGroupSelect04"
-                                aria-label="Example select with button addon">
-                                <option selected>Choose...</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
-                            <div class="input-group-append">
-                                <button class="btn btn-outline-secondary" type="button">Button</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="zone" class="col-sm-12, col-md-12, col-lg-6">
-                        <div class="input-group">
-                            <select class="custom-select" id="inputGroupSelect04"
-                                aria-label="Example select with button addon">
-                                <option selected>Choose...</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
-                            <div class="input-group-append">
-                                <button class="btn btn-outline-secondary" type="button">Button</button>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
+                <div id="select-zone" class="col-sm-12 col-md-12 col-lg-6">
 
+                    <select class="browser-default custom-select">
+                        <option selected>Elige una zona</option>
+                        <option value="1">Sur</option>
+                        <option value="2">Norte</option>
+                        <option value="3">Centro</option>
+                        <option value="3">Sur</option>
+                    </select>
+                </div>
 
-        </section>
+            </div>
+        </div>
 
+        <div id="produc-list">
+            
+        </div>
     </section>
+
+
 
     <!--Formulario de ingreso para los emprendedores-->
-    <section id="login">
-
+    <section id="login" class="container">
+        <div class="row">
+            <div class="col-12">
+                <img src="./IMG/logo_banigualdad.png" class="img-responsive" alt="logo Banigualdad">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 inputs">
+                <div id="loginOrRegister">
+                    <form class="input" action="javascript:void(0)">
+                        <input class="email" id="textEmail" type="email" placeholder="Email usuario">
+                        <input id="password" type="password" placeholder="Contraseña">
+                        <button class="button-iniciar" id="btnSignUp">Iniciar sesión </button>
+                        <button id="registerButton">Registrate</button>
+                    </form>
+                    <p>o inicia sesión con otra cuenta</p>
+                    <div class="row">
+                        <div class="col logos-rrss">
+                            <a class="azul-facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="celeste-twitter" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="rojo-googlemas" href="#"><i class="fab fa-google"></i></a>
+                        </div>
+                    </div>
+                    <p>¿No tienes una cuenta? <a href="#"> Regístrate</a></p>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-default btn-circle btn-lg action-btn">
+            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+        </button>
     </section>
+
 
     <!--timeline de publicaciones de emprendedores y fundación-->
     <section id="timeline">
 
     </section>
 
-    <!--Formulario para agergar productos-->
-    <section id="addStore">
+    <!--Vitrina de emprendedores y sus productos-->
+    <section id="showcase">
 
     </section>
 
@@ -312,13 +191,28 @@
     <footer>
 
     </footer>
-    <!-- Finaliza footer -->
-    <script src="./JS/"></script>
-    <script src="./JS/"></script>
-    <script src="JS/auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.7.1/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.7.1/firebase-database.js"></script>
+
+    <!-- Finaliza footer Ana  -->
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+
+    <script>
+
+        const config = {
+            apiKey: "AIzaSyC6-D_wOl0xwxRoVaSQBrIKMBdHiU4BDu0",
+            authDomain: "banigualdad-d5784.firebaseapp.com",
+            databaseURL: "https://banigualdad-d5784.firebaseio.com",
+            projectId: "banigualdad-d5784",
+            storageBucket: "banigualdad-d5784.appspot.com",
+            messagingSenderId: "250712200354"
+
+        };
+        firebase.initializeApp(config);
+    </script>
+
+    <script src="../src/JS/dataInfo.js">
+    </script>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -328,17 +222,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script>
-        const config = {
-            apiKey: "AIzaSyC6-D_wOl0xwxRoVaSQBrIKMBdHiU4BDu0",
-            authDomain: "banigualdad-d5784.firebaseapp.com",
-            databaseURL: "https://banigualdad-d5784.firebaseio.com",
-            projectId: "banigualdad-d5784",
-            storageBucket: "banigualdad-d5784.appspot.com",
-            messagingSenderId: "250712200354"
-        };
-        firebase.initializeApp(config);
-    </script>
-</body>
 
-</html>
+    <script src="./JS/index.js" type="module"></script>
+    <script src="./JS/main.js" type="module"></script>
+    <script src="./JS/auth.js" type="module"></script>
+
+
+</body>
