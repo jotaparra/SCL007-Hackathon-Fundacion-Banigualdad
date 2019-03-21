@@ -15,13 +15,13 @@ window.onload = () =>{
 }
 
 //Registrar usuario (email y contraseña)
-/* const registerWithEmailAndPassword = () => {
+const registerWithEmailAndPassword = () => {
    const emailUser = document.getElementById('textEmail').value;
    const passwordUser = document.getElementById('password').value;
    registerUser(emailUser, passwordUser);
 
 };
-document.getElementById('registerButton').addEventListener('click', registerWithEmailAndPassword);
+// document.getElementById('registerButton').addEventListener('click', registerWithEmailAndPassword);
 
 
 //Iniciar Sesión correo y contraseña
@@ -367,8 +367,10 @@ const printLikes =(key, uid) =>{
         <div class='col-4 col-m-2'></div>
         </div>
         </div>
-               `; document.getElementById('btn-logout').addEventListener('click', logOut)
-                  document.getElementById(`btnSaveBiography${userInfo.uid}`).addEventListener('click', saveBiography)
+               `; 
+               
+      document.getElementById('btn-logout').addEventListener('click', logOut)
+      document.getElementById(`btnSaveBiography${userInfo.uid}`).addEventListener('click', saveBiography)
        }     
        
    

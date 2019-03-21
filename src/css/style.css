@@ -24,7 +24,7 @@
 }
 
 #login{
-    display: none;
+    display: block;
 }
 
 .img-responsive{
