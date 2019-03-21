@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,8 +11,10 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <title>Fundación Banigualdad</title>
 </head>
 
@@ -20,289 +25,278 @@
     </header>
     <!-- Finaliza header -->
     <!-- Comienzo navegación -->
-    <nav id="navbar">
-        <div class="nav-wrapper">
-            <ul class="nav justify-content-end">
-                <li class="nav-item">
-                    <a id="linkEmprendedor" class="nav-link active" href="#">Si eres emprendedor, ingresa aquí</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-   
+
     <!-- Finaliza Navegación -->
     <!-- Comienzo section -->
 
     <!--Home primera pagina-->
-        <section id="home">
+    <section id="home">
+        <nav id="navbar">
+            <div class="nav-wrapper">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a id="linkEmprendedor" class="nav-link active" href="#">Si eres emprendedor, ingresa aquí</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-            <div id="logotype">
-                <a class="brand-logo"><img class="mk-desktop-logo dark-logo "
-                        title="Apoyamos emprendedores con microcrédito y capacitación"
-                        alt="Apoyamos emprendedores con microcrédito y capacitación"
-                        src="https://www.banigualdad.cl/wp-content/uploads/2017/12/logo_web-01.png"></a>
-    
-            </div>
-            <!--mapa pagina principal-->
-            <div class="map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7804075.836032351!2d-74.34103291444886!3d-27.668595987251006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5410425af2f%3A0x505e1131102b91d!2sChile!5e0!3m2!1ses-419!2scl!4v1553095963180"
-                    width="1500" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
-            
-            
-            <!--productos recien agregados-->
-            <!--Carousel Wrapper-->
-    <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
-    
-            <!--Controls-->
-            <div class="controls-top">
-              <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
-              <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fas fa-chevron-right"></i></a>
-            </div>
-            <!--/.Controls-->
-          
-            <!--Indicators-->
-            <ol class="carousel-indicators">
-              <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
-              <li data-target="#multi-item-example" data-slide-to="1"></li>
-              <li data-target="#multi-item-example" data-slide-to="2"></li>
-            </ol>
-            <!--/.Indicators-->
-          
-            <!--Slides-->
+        <div id="logotype">
+            <a class="brand-logo"><img class="mk-desktop-logo dark-logo " title="Apoyamos emprendedores con microcrédito y capacitación"
+                    alt="Apoyamos emprendedores con microcrédito y capacitación" src="https://www.banigualdad.cl/wp-content/uploads/2017/12/logo_web-01.png"></a>
+
+        </div>
+        <img src="img/Group5.png" alt="img/Group5.png" class="imagecoverpage">
+        <div>
+
+        </div>
+
+        <!--productos recien agregados-->
+
+        <!-- <div class="container">
+                <div class="row"> -->
+        <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+            <!-- estos dos div hay que analizar para el modal -->
+
             <div class="carousel-inner" role="listbox">
-          
-              <!--First slide-->
-              <div class="carousel-item active">
-          
-                <div class="col-md-4">
-                  <div class="card mb-2">
-                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
-                      alt="Card image cap">
-                    <div class="card-body">
-                      <h4 class="card-title">Card title</h4>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                      <a class="btn btn-primary">Button</a>
-                    </div>
-                  </div>
+
+                <!--First slide-->
+
+                <div>
+                    <h2 id="productsTitle" class="textTitle">Productos Recientemente Agregados</h2>
                 </div>
-          
-                <div class="col-md-4">
-                  <div class="card mb-2">
-                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
-                      alt="Card image cap">
-                    <div class="card-body">
-                      <h4 class="card-title">Card title</h4>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                      <a class="btn btn-primary">Button</a>
-                    </div>
-                  </div>
+
+                <div class="controls-top">
+                    <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
+                    <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fas fa-chevron-right"></i></a>
                 </div>
-          
-                <div class="col-md-4">
-                  <div class="card mb-2">
-                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
-                      alt="Card image cap">
-                    <div class="card-body">
-                      <h4 class="card-title">Card title</h4>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                      <a class="btn btn-primary">Button</a>
+
+
+                <div class="carousel-item active">
+
+                    <ol class="carousel-indicators">
+                        <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+                        <li data-target="#multi-item-example" data-slide-to="1"></li>
+                        <li data-target="#multi-item-example" data-slide-to="2"></li>
+                    </ol>
+
+
+
+                    <div class="col-md-4">
+                        <div class="card mb">
+                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Hola</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the
+                                    card's content.</p>
+                                <a class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                </div>
-          
-              </div>
-              <!--/.First slide-->
-          
-              <!--Second slide-->
-              <h2 id="productsTitle">Productos Recientemente Agregados</h2>
-              
-              <div class="carousel-item">
-          
-                <div class="col-md-4">
-                  <div class="card mb-2">
-                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg"
-                      alt="Card image cap">
-                    <div class="card-body">
-                      <h4 class="card-title">Card title</h4>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                      <a class="btn btn-primary">Button</a>
+
+                    <div class="col-md-4">
+                        <div class="card mb">
+                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the
+                                    card's content.</p>
+                                <a class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                </div>
-          
-                <div class="col-md-4">
-                  <div class="card mb-2">
-                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg"
-                      alt="Card image cap">
-                    <div class="card-body">
-                      <h4 class="card-title">Card title</h4>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                      <a class="btn btn-primary">Button</a>
+
+                    <div class="col-md-4">
+                        <div class="card mb">
+                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the
+                                    card's content.</p>
+                                <a class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
                     </div>
-                  </div>
+
                 </div>
-          
-                <div class="col-md-4">
-                  <div class="card mb-2">
-                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg"
-                      alt="Card image cap">
-                    <div class="card-body">
-                      <h4 class="card-title">Card title</h4>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                      <a class="btn btn-primary">Button</a>
+                <!--/.First slide-->
+
+                <!--Second slide-->
+
+                <div class="carousel-item">
+
+                    <div class="col-md-4">
+                        <div class="card mb-2">
+                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the
+                                    card's content.</p>
+                                <a class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                </div>
-          
-              </div>
-              <!--/.Second slide-->
-          
-              <!--Third slide-->
-              <div class="carousel-item">
-          
-                <div class="col-md-4">
-                  <div class="card mb-2">
-                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"
-                      alt="Card image cap">
-                    <div class="card-body">
-                      <h4 class="card-title">Card title</h4>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                      <a class="btn btn-primary">Button</a>
+
+                    <div class="col-md-4">
+                        <div class="card mb-2">
+                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the
+                                    card's content.</p>
+                                <a class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                </div>
-          
-                <div class="col-md-4">
-                  <div class="card mb-2">
-                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(45).jpg"
-                      alt="Card image cap">
-                    <div class="card-body">
-                      <h4 class="card-title">Card title</h4>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                      <a class="btn btn-primary">Button</a>
+
+                    <div class="col-md-4">
+                        <div class="card mb-2">
+                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the
+                                    card's content.</p>
+                                <a class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
                     </div>
-                  </div>
+
                 </div>
-          
-                <div class="col-md-4">
-                  <div class="card mb-2">
-                    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(51).jpg"
-                      alt="Card image cap">
-                    <div class="card-body">
-                      <h4 class="card-title">Card title</h4>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                      <a class="btn btn-primary">Button</a>
+                <!--/.Second slide-->
+
+                <!--Third slide-->
+                <div class="carousel-item">
+
+                    <div class="col-md-4">
+                        <div class="card mb-2">
+                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the
+                                    card's content.</p>
+                                <a class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
                     </div>
-                  </div>
+
+                    <div class="col-md-4">
+                        <div class="card mb-2">
+                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(45).jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the
+                                    card's content.</p>
+                                <a class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card mb-2">
+                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(51).jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the
+                                    card's content.</p>
+                                <a class="btn btn-primary">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-          
-              </div>
-              <!--/.Third slide-->
-          
+                <!--/.Third slide-->
+
             </div>
             <!--/.Slides-->
-          
-          </div>
-          <!--/.Carousel Wrapper-->
-            <!--ver más- ir a tienda-->
-            <div id="more">
-                <a href="" class="icon col-xs-3 col-sm-4">
-                    <img id="shopping-bag" src="https://i.ibb.co/Gk4L9s0/shopping-bag-1.png" alt="shopping-bag">
-                </a>
-                <p>Ver más</p>
+
+        </div>
+
+
+        <input id="moreproduct" type="image" class="moreproduct" src="https://i.ibb.co/Gk4L9s0/shopping-bag-1.png" alt="shopping-bag">
+        </input>
+        <p class="textmore"> Ver más</p>
+
+    </section>
+
+    <!--Vitrina de emprendedores-->
+
+    <section id="viewStore" class="showcase">
+
+        <div id="search">
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+
+        <div id="selectOption" class="container">
+            <div class="row">
+
+
             </div>
-    
-    
-            </div>
-    
-            <!--Vitrina de emprendedores y sus productos-->
-            <section id="viewStore">
-    
-                <div id="search">
-    
-                    <form class="form-inline">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                    </form>
-                </div>
-    
-                <div id="selectOption" class="container">
-                    <div class="row">
-    
-                        <div id="categories" class="col-sm-12, col-md-12, col-lg-6">
-                            <div class="input-group">
-                                <select class="custom-select" id="inputGroupSelect04"
-                                    aria-label="Example select with button addon">
-                                    <option selected>Choose...</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
-                                <div class="input-group-append">
-                                    <button class="btn btn-outline-secondary" type="button">Button</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="zone" class="col-sm-12, col-md-12, col-lg-6">
-                            <div class="input-group">
-                                <select class="custom-select" id="inputGroupSelect04"
-                                    aria-label="Example select with button addon">
-                                    <option selected>Choose...</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
-                                <div class="input-group-append">
-                                    <button class="btn btn-outline-secondary" type="button">Button</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-    
-    
-    
-            </section>
-    
-        </section>
-    
+        </div>
+    </section>
+
+
+    </section>
+
 
     <!--Formulario de ingreso para los emprendedores-->
     <section id="login" class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-md-6">
                 <img src="./IMG/logo_banigualdad.png" class="img-responsive" alt="logo Banigualdad">
             </div>
         </div>
-        <div class="row">
-            <div class="col-12 inputs">
+        <div class="row pt-5">
+            <div class="col-12">
                 <div id="loginOrRegister">
-                    <form class="input" action="javascript:void(0)">
-                        <input class="email" id="textEmail" type="email" placeholder="Email usuario">
-                        <input id="password" type="password" placeholder="Contraseña">
-                        <button class="button-iniciar" id="btnSignUp">Iniciar sesión </button>
-                        <button id="registerButton">Registrate</button>
+                    <form action="javascript:void(0)">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input id="textEmail" type="text" class="form-control" placeholder="Ingresa tu email"
+                                aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1"><i class="fas fa-lock"></i></span>
+                            </div>
+                            <input id="password" type="text" class="form-control" placeholder="Ingresa tu contraseña"
+                                aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+
+                        <button type="button" class="btn btn-primary btnSignUp" id="btnSignUp">Ingresar</button>
                         <div class="error" id="error-m"></div>
                     </form>
-                    <p>o inicia sesión con otra cuenta</p>
-                    <div class="row">
-                        <div class="col logos-rrss">
-                            <a class="azul-facebook" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="celeste-twitter" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="rojo-googlemas" href="#"><i class="fab fa-google"></i></a>
-                        </div>
+                    <div class="text-center pb-5">
+                        <p class="h6 pt-3">¿Olvidate tu contraseña?</p>
+                        <a href="">Recuperala aquí</a>
+
+                        <p class="h6 pt-3">¿Aún no eres parte de Banigualdad?</p>
+                        <a href="https://www.banigualdad.cl/" target="_blank">Contáctanos</a>
                     </div>
-                    <p>¿No tienes una cuenta? <a href="#"> Regístrate</a></p>
+                    
                 </div>
             </div>
         </div>
@@ -310,22 +304,447 @@
 
 
     <!--timeline de publicaciones de emprendedores y fundación-->
-    <section id="timeline">
-        <div>
-            <button class="button-right" id="btnLogout"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</button>
-        </div>
+    <section id="timeline" class="timeline">
+            <div>
+                    <button class="button-right" id="btnLogout"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</button>
+            </div>
+        
     </section>
 
     <!--Vitrina de emprendedores y sus productos-->
-    <section id="showcase">
+    <div id="produc-list"><!--ESTO SE AGREGA-->
+
+            <div id="serviceCategory">
+            <!-- Card deck -->
+            <div class="card-deck">
+
+                <!-- Card -->
+                <div class="card mb-4">
+
+                    <!--Card image-->
+                    <div class="view overlay">
+                        <img class="card-img-top" src="https://www.banigualdad.cl/wp-content/uploads/bfi_thumb/alice-peailillo-nrdhmaquke088vcktum8vwrxzqmtpvykxa1p4478t4.jpg"
+                            alt="Card image cap">
+                        <a href="#!">
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+
+                    <!--Card content-->
+                    <div class="card-body">
+
+                        <!--Title-->
+                        <h4 class="card-title">Servicios</h4>
+                        <h3 class="name">Alice Peñailillo</h3>
+                        <!--Text-->
+                        <p class="card-text">Alice, vive en San Antonio, es Ingeniero de profesión y realiza terapias complementarias, como el reiki</p>
+                        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                        <button type="button" class="btn btn-light-blue btn-md">Contactame</button>
+
+                    </div>
+
+                </div>
+                <!-- Card -->
+
+                <!-- Card -->
+                <div class="card mb-4">
+
+                    <!--Card image-->
+                    <div class="view overlay">
+                        <img class="card-img-top" src="https://banqueteria-cocteleria.webnode.cl/_files/200000003-16d1717cb9/450/banqueteria-y-eventos-volterra-161711-MLC20619125700_032016-O.jpg"
+                            alt="Card image cap">
+                        <a href="#!">
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+
+                    <!--Card content-->
+                    <div class="card-body">
+
+                        <!--Title-->
+                        <h4 class="card-title">Servicios</h4>
+                        <h3 class="name">Cristina Herrera</h3>
+                        <!--Text-->
+                        <p class="card-text">Cristina se dedica a prestar servicios de banqueteria en la zona sur del país</p>
+                        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                        <button type="button" class="btn btn-light-blue btn-md">Contactame</button>
+
+                    </div>
+
+                </div>
+                <!-- Card -->
+
+                <!-- Card -->
+                <div class="card mb-4">
+
+                    <!--Card image-->
+                    <div class="view overlay">
+                        <img class="card-img-top" src="http://www.transportesexpress.cl/site/wp-content/uploads/2017/03/camion4.jpg"
+                            alt="Card image cap">
+                        <a href="#!">
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+
+                    <!--Card content-->
+                    <div class="card-body">
+
+                        <!--Title-->
+                        <h4 class="card-title">Servicios</h4>
+                        <h3 class="name">Ramon Carnicer</h3>
+                        <!--Text-->
+                        <p class="card-text">Ramon se dedica a hacer fletes en la zona sur del país. Muy ordenado y responsable</p>
+                        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                        <button type="button" class="btn btn-light-blue btn-md">Contactame</button>
+
+                    </div>
+
+                </div>
+                <!-- Card -->
+
+            </div>
+            <!-- Card deck -->
+        </div><!--Aquí termina categoria servicios-->
+
+        <div id="foodCategory">
+            <!-- Card deck -->
+<div class="card-deck">
+
+        <!-- Card -->
+        <div class="card mb-4">
+      
+          <!--Card image-->
+          <div class="view overlay">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg" alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+      
+          <!--Card content-->
+          <div class="card-body">
+      
+            <!--Title-->
+            <h4 class="card-title">Card title</h4>
+            <h3 class="name"></h3>
+            <!--Text-->
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+      
+          </div>
+      
+        </div>
+        <!-- Card -->
+      
+        <!-- Card -->
+        <div class="card mb-4">
+      
+          <!--Card image-->
+          <div class="view overlay">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/14.jpg" alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+      
+          <!--Card content-->
+          <div class="card-body">
+      
+            <!--Title-->
+            <h4 class="card-title">Card title</h4>
+            <h3 class="name"></h3>
+            <!--Text-->
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+      
+          </div>
+      
+        </div>
+        <!-- Card -->
+      
+        <!-- Card -->
+        <div class="card mb-4">
+      
+          <!--Card image-->
+          <div class="view overlay">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/15.jpg" alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+      
+          <!--Card content-->
+          <div class="card-body">
+      
+            <!--Title-->
+            <h4 class="card-title">Card title</h4>
+            <h3 class="name"></h3>
+            <!--Text-->
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+      
+          </div>
+      
+        </div>
+        <!-- Card -->
+      
+      </div>
+      <!-- Card deck -->
+        </div>
+
+        <div id="handMade">
+            <!-- Card deck -->
+<div class="card-deck">
+
+        <!-- Card -->
+        <div class="card mb-4">
+      
+          <!--Card image-->
+          <div class="view overlay">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg" alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+      
+          <!--Card content-->
+          <div class="card-body">
+      
+            <!--Title-->
+            <h4 class="card-title">Card title</h4>
+            <h3 class="name"></h3>
+            <!--Text-->
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+      
+          </div>
+      
+        </div>
+        <!-- Card -->
+      
+        <!-- Card -->
+        <div class="card mb-4">
+      
+          <!--Card image-->
+          <div class="view overlay">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/14.jpg" alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+      
+          <!--Card content-->
+          <div class="card-body">
+      
+            <!--Title-->
+            <h4 class="card-title">Card title</h4>
+            <h3 class="name"></h3>
+            <!--Text-->
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+      
+          </div>
+      
+        </div>
+        <!-- Card -->
+      
+        <!-- Card -->
+        <div class="card mb-4">
+      
+          <!--Card image-->
+          <div class="view overlay">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/15.jpg" alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+      
+          <!--Card content-->
+          <div class="card-body">
+      
+            <!--Title-->
+            <h4 class="card-title">Card title</h4>
+            <h3 class="name"></h3>
+            <!--Text-->
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+      
+          </div>
+      
+        </div>
+        <!-- Card -->
+      
+      </div>
+      <!-- Card deck -->
+        </div>
+
+        <div id="terapyAndBeauty">
+            <!-- Card deck -->
+<div class="card-deck">
+
+        <!-- Card -->
+        <div class="card mb-4">
+      
+          <!--Card image-->
+          <div class="view overlay">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg" alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+      
+          <!--Card content-->
+          <div class="card-body">
+      
+            <!--Title-->
+            <h4 class="card-title">Card title</h4>
+            <h3 class="name"></h3>
+            <!--Text-->
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+      
+          </div>
+      
+        </div>
+        <!-- Card -->
+      
+        <!-- Card -->
+        <div class="card mb-4">
+      
+          <!--Card image-->
+          <div class="view overlay">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/14.jpg" alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+      
+          <!--Card content-->
+          <div class="card-body">
+      
+            <!--Title-->
+            <h4 class="card-title">Card title</h4>
+            <h3 class="name"></h3>
+            <!--Text-->
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+      
+          </div>
+      
+        </div>
+        <!-- Card -->
+      
+        <!-- Card -->
+        <div class="card mb-4">
+      
+          <!--Card image-->
+          <div class="view overlay">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/15.jpg" alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+      
+          <!--Card content-->
+          <div class="card-body">
+      
+            <!--Title-->
+            <h4 class="card-title">Card title</h4>
+            <h3 class="name"></h3>
+            <!--Text-->
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+      
+          </div>
+      
+        </div>
+        <!-- Card -->
+      
+      </div>
+      <!-- Card deck -->
+        </div>
+
+
+        </div><!--HASTA ACA SE AGREGA-->
 
     </section>
 
     <!--Perfil de los emprendedores-->
-    <section id="profile">
+    <section id="profile" class="container section-profile">
+        <div class="card styleCard" style="max-width: 540px;">
+            <div class="row no-gutters">
+                <div class="col-4">
+                    <img src="./IMG/solange-cspedes.jpg" class="card-img imgProfile" alt="imagen de perfil">
+                </div>
+                <div class="col-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Solange Céspedes</h5>
+                        <p class="card-text">“Manteniendo la tradición en Pomaire”</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col colReview m-2">
+                <div class="pt-3 pb-5">
+                    <h6>Mi historia</h6>
+                    <p>
+                        Tengo mi taller y además tengo un local donde vendo lo que yo misma fabrico. Antes yo solo
+                        abastecía
+                        locales
+                        y no ganaba mucho dinero, incluso pensé en dejarlo al ver mi situación económica. Un día me
+                        topé con una
+                        amiga
+                        que pertenecía a la Fundación que me invitó a participar.
+                    </p>
+                    <h6>Ubicación</h6>
+                    <p>
+                        Pomaire 1234
+                    </p>
+                    <h6>Horario</h6>
+                    <p>
+                        lunes a viernes 09:00-16:00 hrs.
+                    </p>
+                    <h6>Quiero que me contacten por:</h6>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
+                            checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Teléfono
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Correo
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
+                            checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Facebook
+                        </label>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-md float-right">Editar mi perfil</button>
+                </div>
 
-    </section>
+            </div>
+        </div>
 
+ 
+  
+   </section>
+   <!-- agregar productos-->
     <section id="products" class="section-profile">
       <div class="container">
         <div class="row p-5">
@@ -338,6 +757,7 @@
                 <h5>Productos agregados a la vitrina</h5>
             </div>
           </div>
+        
 <!-- tabla con productos -->
 <div class="row mt-3">
     <div class="col colReview m-2 mb-5">
@@ -417,17 +837,6 @@
 
 
       </section>
-
-    <!--Chat- comunicación entre emprendedores y su asesora-->
-    <section id="chat">
-
-    </section>
-
-    <section>
-        <div id="root">
-
-        </div>
-    </section>
     <!-- Finaliza section -->
     <!-- Comienzo footer -->
     <footer>
@@ -437,9 +846,8 @@
     <!-- Finaliza footer Ana  -->
     <script src="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
- 
-    <script> 
 
+    <script>
         const config = {
             apiKey: "AIzaSyC6-D_wOl0xwxRoVaSQBrIKMBdHiU4BDu0",
             authDomain: "banigualdad-d5784.firebaseapp.com",
@@ -447,19 +855,15 @@
             projectId: "banigualdad-d5784",
             storageBucket: "banigualdad-d5784.appspot.com",
             messagingSenderId: "250712200354"
-    
         };
         firebase.initializeApp(config);
     </script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 
     <script src="./JS/index.js" type="module"></script>
     <script src="./JS/main.js" type="module"></script>

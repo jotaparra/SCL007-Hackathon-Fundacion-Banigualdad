@@ -1,27 +1,14 @@
 /* estilos del login */
 .container {
-    display: grid;
     justify-content: center;
 }
-img.img-responsive {
-    margin: auto
-}
-.inputs {
-    margin: 0px auto;
-    display: grid;
-    justify-content: center;
-    
-}
-#login form input, button {
-    border: 1px solid #898989;
+
+
+.btnSignUp{
     width: 100%;
-    display: block;
-    -webkit-border-radius: 20px;       /* especificaciones para safari, opera, chrome */
-    -moz-border-radius: 20px;
-    border-radius: 20px;
-    padding: 10px 0;
-    margin: 1.2em auto;
+    background: -webkit-linear-gradient(left,#116ebf 0%, #1291cc 100%);
 }
+
 #login form input {
     background: #C4C4C4;
     text-align: center;
@@ -35,40 +22,26 @@ img.img-responsive {
     opacity: 0.6;
     transition: 0.4s;
 }
-.logos-rrss {
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
+
+#login{
+    display: none;
 }
-.logos-rrss a {
-    font-size: 25px;
-    color: azure;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin: 5px;
-    text-decoration: none;
-}
-.logos-rrss a:hover{
-    opacity: 0.6;
-    text-decoration: none;
-    transition: 0.4s;
-}
-.azul-facebook{
-    background-color: #3b5998;
-}
-.celeste-twitter{
-    background-color: #1da1f2;
-}
-.rojo-googlemas{
-    background-color: #ea4335;
+
+.img-responsive{
+
+  margin: 0 auto;
+  display: flex;
+ 
 }
 
 
-/* pagina principal/vitrina */
+
+
+/* pagina principal */
+
+.imagecoverpage{
+    width: 100%;
+}
 
 #navbar{
     background-color: #0082d8;
@@ -91,16 +64,49 @@ img.img-responsive {
 }
 
 #shopping-bag{
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     justify-content: center;
     margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
    
 }
 
-
-#viewStore{
+/*#viewStore{
     display:none;
+}*/
+
+
+#search{
+    text-align: center;
+ }
+ 
+ .btn-outline-secondary {
+     color: #74c75b;
+     border-color: #74c75b;
+ }
+ 
+ #selectOption{
+     margin-top: 1.2rem;
+ }
+ 
+ select#inputGroupSelect04.custom-select{
+     width: 200px;
+ }
+
+ #moreProducts{
+     font-size: 1.5rem;
+     font-family: sans-serif;
+     color: #0082d8;
+     text-align: center;
+ }
+
+
+input.form-control.form-control-sm.mr-3.w-75{
+    width: 4rem;
+    margin: 1rem;
 }
 
 /* productos y servicios */
@@ -124,3 +130,91 @@ img.img-responsive {
 }
 /* termino de productos y servicios */
 
+#search{
+    float:right
+}
+
+select.browser-default.custom-select{
+    width: 20rem;
+    margin: 1rem;
+}
+
+i.fas.fa-search{
+     color: #0082d8;
+     
+}
+ 
+
+.carousel-item{
+    display: flex;
+    position: relative;
+}
+
+.textTitle, .controls-top{
+    text-align: center;
+}
+
+#more{
+    display: flex;
+    
+}
+
+.moreproduct{
+    position: relative;
+    text-align: center;
+    left: 40%;
+    top: 40px;
+}
+
+
+.textmore{
+    position: relative;
+    top: 50px;
+    left: 40%;
+}
+/*Escondiendo home para trabajar en viewStore*/
+/*#home{
+    display: none;
+}*/
+
+/* vitrina */
+
+
+/* perfil */
+.section-profile{
+    background-color:#e5e5e5;
+}
+.imgProfile{
+    width: 100px;
+    border-radius: 50%!important;
+    margin-top: 10px;
+}
+
+.styleCard{
+    border:none!important;
+    background-color:#e5e5e5!important;
+}
+
+.colReview{
+    background-color: #ffffff;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.08)!important;
+    border-radius: 10px;
+}
+
+#profile{
+    display: none;
+
+}
+
+/* footer */
+
+ /* timeline */
+
+ .timeline{
+     display: none;
+ }
+
+img.card-img-top{
+    height: 100%;
+    max-height: 200px;
+}
