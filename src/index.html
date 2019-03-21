@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -280,7 +282,73 @@
 
 
     <!--timeline de publicaciones de emprendedores y fundación-->
-    <section id="timeline" class="timeline">
+  
+  
+    <section id="timeline">
+        <div> <button class="button-right" id="btnLogout"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</button> </div>
+
+              
+         <section id="index_page">
+           <div class="container">
+              <div class="row">
+           <!-- comentar y publicar -->  
+                <div id="root">
+                <div id="newcoments"><div id="comentPost"></div></div>    
+                </div>
+              </div>
+           </div>
+        </section>
+          
+    <!-- Textarea para publicacion -->
+                       <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Ingresa tu publicación </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-------formulario publicaciones---->
+          <form>
+            <div class="form-group">
+            <label for="exampleInputEmail1" name="title">Titulo</label>
+            <input type="email" class="form-control" name="titulo" id="tituloaconvalidar">
+            </div>
+
+            <div class="form-group">
+            <label for="exampleFormControlSelect1">Canales de Difusion</label>
+            <select class="form-control" id="hashtagsPost" >
+                <option>BanIgualdad</option>
+                <option>Santiago</option>
+                <option>Zona Norte</option>
+                <option>Zona Central</option>
+                <option>Zona Sur</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+            <label id="fileUpload" for="postImgInput" class="inputTitle">Escoger imagen</label>
+            <input type="file" class="form-control-file"   id="postImgInput">
+            </div>
+
+            <div class="form-group">
+             <label for="exampleFormControlTextarea1" name="subject">Escribe tu Post</label>
+             <textarea class="form-control" name="comentario" id="coments" ></textarea>
+            </div>  
+            </form>
+
+        </div>
+        <div class="modal-footer">
+          <button id="btnComents" type="button"   data-dismiss="modal" class="btn btn-primary">Crear Publicacion</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
         <div>
             <button class="button-right" id="btnLogout"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</button>
         </div>
@@ -843,9 +911,46 @@
     </section>
     <!-- Finaliza section -->
     <!-- Comienzo footer -->
-    <footer>
+    
+<footer id="footer_page">
+        <div class="container">
+            <div class="row">
+               
+               <div  class="col icons-footer">
+                   <a id="index" href="#timeline">
+                   <i class="fas fa-home btn-act active"></i>
+                   </a>
+              </div>
 
-    </footer>
+               <div class="col icons-footer"> 
+                    <a id="search" href="#viewStore">
+                    <i class="fas fa-shopping-bag"></i>
+                    </a>
+               </div>
+
+               <div class="col icons-footer">
+                  <a class="add-post" id="addPost" data-toggle="modal" data-target="#myModal">
+                  <i class="fas fa-plus-circle btn-act"></i>
+                  </a>
+              </div>
+
+               <div class="col icons-footer"> 
+                   <a id="recipes" href="#addProductos">
+                      <i class="fas fa-cart-plus"></i>
+                   </a>
+              </div>
+
+               <div  class="col icons-footer"> 
+                   <a id="showUser" href="#profile">
+                   <i  class="fas fa-user-circle btn-act"></i>
+                   </a> 
+              </div>          
+      </div>
+    </div>
+
+        <!--footer e iconos de vitrina -->
+  </footer>
+    
 
     <!-- Finaliza footer Ana  -->
     <script src="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.js"></script>
@@ -875,3 +980,4 @@
 
 
 </body>
+
