@@ -11,15 +11,18 @@ window.onload = () =>{
             // document.getElementById('btnLogout').style.display = "none";
          }   
       });
+
 }
 
 //Registrar usuario (email y contraseña)
-const registerWithEmailAndPassword = () => {
+/* const registerWithEmailAndPassword = () => {
    const emailUser = document.getElementById('textEmail').value;
    const passwordUser = document.getElementById('password').value;
    registerUser(emailUser, passwordUser);
+
 };
 document.getElementById('registerButton').addEventListener('click', registerWithEmailAndPassword);
+
 
 //Iniciar Sesión correo y contraseña
 const signInWithEmailAndPassword = () => {
@@ -456,3 +459,24 @@ const printLikes =(key, uid) =>{
        });
    });
    
+
+// mostrar section login
+
+document.getElementById('linkEmprendedor').addEventListener('click', () =>{
+   checkAuthState()
+   document.getElementById('login').style.display='block';
+   document.getElementById('home').style.display='none';
+
+})
+
+document.getElementById('moreproduct').addEventListener('click', () =>{
+
+   document.getElementById('home').style.display='none';
+   document.getElementById('viewStore').style.display='block';
+
+})
+
+
+
+
+
