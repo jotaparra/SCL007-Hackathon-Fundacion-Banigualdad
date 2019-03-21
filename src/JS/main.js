@@ -30,3 +30,22 @@ const logOut = () => {
    signOut()
 }
 document.getElementById('btnLogout').addEventListener('click', logOut);
+
+// mostrar section login
+
+document.getElementById('linkEmprendedor').addEventListener('click', () =>{
+   checkAuthState()
+   document.getElementById('login').style.display='block';
+   document.getElementById('home').style.display='none';
+
+})
+
+document.getElementById('moreproduct').addEventListener('click', () =>{
+
+   document.getElementById('home').style.display='none';
+   document.getElementById('viewStore').style.display='block';
+
+})
+
+
+  
