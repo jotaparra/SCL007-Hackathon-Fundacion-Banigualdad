@@ -74,9 +74,9 @@
    
 }
 
-/*#viewStore{
+#viewStore{
     display:none;
-}*/
+}
 
 
 #search{
@@ -172,6 +172,10 @@ i.fas.fa-search{
 
 /* vitrina */
 
+.lisProduct{
+    display: block;
+}
+
 
 /* perfil */
 .section-profile{
@@ -210,4 +214,8 @@ i.fas.fa-search{
 img.card-img-top{
     height: 100%;
     max-height: 200px;
+}
+
+.subirproductos{
+    display: none;
 }
