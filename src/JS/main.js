@@ -36,14 +36,13 @@ const logOut = () => {
 document.getElementById('btnLogout').addEventListener('click', logOut);
 
 
+
+
+
 // Se guardan los post en la base de datos
 
 const guardarComentarios = () => {  
-
-
-    
-
-   const name = firebase.auth().currentUser.displayName;
+const name = firebase.auth().currentUser.displayName;
        const title = tituloaconvalidar.value;
        const coment = coments.value;
        let photoUser = firebase.auth().currentUser.photoURL;
@@ -76,66 +75,67 @@ const guardarComentarios = () => {
        } 
        enviarConvalidacionAFirebase(user_photo,userId, name,title,coment,tags, day , month, year, postImg);
        index.click();
-   
-   
-       
-       
     }
     
    btnComents.addEventListener('click', guardarComentarios)
+
    
    // Lee e imprime los comentarios que existen en la base de datos tanto en la pantalla principal como en recetas
    
    const readPostFromDatabase = () => {
-
-       
-       readPost((coment)=>{ 
-       
-           newcoments.innerHTML = 
-         `          
-         <div class='row' id= ${coment.key}>  
-             <div class='col-3 col-m-2 col-s-12'></div>
-             <div class='col-6 col-m-8 col-s-12'>  
-                       <div class='box_text'>
+      readPost((coment)=>{ 
+       newcoments.innerHTML = 
+         `<div class="cards-container" id= ${coment.key}>
+           <div class="card card-one">
+                       
                            <div class='box-header'>
-                            <div class='avatar_post'><img src='${coment.val().profile_picture}'/></div> 
+                            <div class='avatar_post'>
+                            <img src='${coment.val().profile_picture}'>
+                            </div> 
                              <div class='name-post'>${coment.val().author}</div>
                            </div>
-                           <div class='box-content'>
-                           <h3>${coment.val().title}</h3><br>
-                           
-                             <div class='content'>    
-                               <img class="img-post" src='${coment.val().imagen}'>                      
-                               <p>${coment.val().body}</p>
-                               
-                             </div><br>
-                             <h4>${coment.val().hashtag}</h4><br>
-                             <span> Creado: ${coment.val().date.d} / ${coment.val().date.m} / ${coment.val().date.y} </span>
-                           </div>
-                           <div class='box-buttons'>
-                          <div class='row'>
-                           <div class='col-4'>
-                               <button class='btn-likecoment likes' id='likePost${coment.key}'><span class='icondeskopt'><i class='fa fa-thumbs-up'></i></span>  <span id= 'countLike${coment.key}'></span> <p class='iconmovile'>Like </p></button></div>
-                               <div class='col-4'>
-                               <button  class='btn-likecoment comments_home'id='${coment.key}'><span class='icondeskopt'><i class='far fa-comment'></i></span><p class='iconmovile'>Ver comentarios</p></button></div>
-                               <div class='col-4'>
-                               <button  id='btn${coment.key}' userpp=${coment.key} class='btn-likecoment borrar'><span class='icondeskopt'><i class='far fa-trash-alt'></i></span><p class='iconmovile'>borrar</p></button></div>   
+
+                           <div class='content'>   
+                               <div class="contenidopost">
+                                 <h3>${coment.val().title}</h3>          
+                                 <p>${coment.val().body}</p>
+                                 <h6>Canal: #${coment.val().hashtag}</h6>
+                                 </div>
+
+                                 <div class="contenidopost-img">
+                                 <img class="img-post" src='${coment.val().imagen}'>
                                   </div>
-                                  <div id='comentPost'>               
-                                    
-                                  
-                                  <textarea class='coments-post' name='comentario' id='comentsPostHome${coment.key}'
-                                      placeholder='Escribe aqui tu comentario...'></textarea>           
-                                  <button  class='btn-likecoment save_homecoment' id='${coment.key}'>Comentar</button>
-                             
-                 
-                          </div> <br>
-                          <div  id='printHome${coment.key}'> </div>
                            </div>
-                    </div> 
-               </div>
-           <div class='col-3 col-m-2 col-s-12'></div>
-            </div>` + newcoments.innerHTML;  
+                          
+
+                              <div class='row'>
+                               <div class='likes col alinear' id='likePost${coment.key}'>
+                               <i class='far fa-thumbs-up'></i>
+                               <span id= 'countLike${coment.key}'></span> 
+                               <p class='iconmovile'>Me gusta</p>
+                               </div>
+                               
+                               <div class='comments_home col alinear' id='${coment.key}'>
+                               <i data-toggle="collapse" href="#collapseExample"  class="far fa-comment"></i>
+                               <p class='iconmovile'>Comentar</p>
+                               </div>
+                          
+                               <div class='borrar col  alinear' id='btn${coment.key}' userpp=${coment.key} class='borrar'>
+                               <i class="far fa-trash-alt"></i>
+                               <p class='iconmovile'>Borrar</p>
+                               </div>
+                               </div>
+
+                               <div class="collapse" id="collapseExample">
+                               <div id='comentPost'>               
+                                    <textarea class="form-control" name='comentario' id='comentsPostHome${coment.key}'
+                                      placeholder='Escribe aqui tu comentario...'>
+                                    </textarea>      
+                                   <button  class='save_homecoment' id='${coment.key}'>Comentar</button>
+                                   <div  id='printHome${coment.key}'></div>
+                               </div>
+                               </div>
+                              </div> </div>` + newcoments.innerHTML;  
    
    
            let btnLikes = document.getElementsByClassName('likes');
@@ -153,15 +153,10 @@ const guardarComentarios = () => {
            let btnSaveComentHome = document.getElementsByClassName('save_homecoment');
            for (let i =0; i< btnSaveComentHome.length; i++){
                btnSaveComentHome[i].addEventListener('click', saveComentHome);
-           }
-                         
-          
-             
-               
-           })
+           } })
        };     
      
-   // Se guardan los likes en la base de datos
+ // Se guardan los likes en la base de datos
    const btnLikePost = (e) =>{
        const key = e.currentTarget.getAttribute('id').slice(8) 
        //const key = keyA !== null ? keyA :e.currentTarget.getAttribute('id').slice(11)
@@ -170,12 +165,9 @@ const guardarComentarios = () => {
        likePost (key,uid)
        printLikes (key,uid)
        likeCount (key,uid)
-   
    } 
-   
-   // Se imprimen los likes
-   
-   const printLikes =(key, uid) =>{
+ // Se imprimen los likes
+const printLikes =(key, uid) =>{
    
        let thisPostRef = firebase.database().ref('posts/'+ key + '/starCount'+ '/likeCount');
        thisPostRef.once('value', function(snapshot) {
@@ -198,37 +190,7 @@ const guardarComentarios = () => {
        });
    
    }
-   
-     const editComentsFromFirebase = (e) => {
-     var editPostID =  e.currentTarget.getAttribute('id').slice(4);
-     var newPostKey =  e.currentTarget.getAttribute('value');
-     console.log(editPostID);
-     console.log(newPostKey);
-     var firebaserefEdit = firebase.database().ref('posts/' + editPostID +'/coment/' + newPostKey);
-     firebaserefEdit.once('value', function(snap){
-         var datos = snap.val();
-         console.log(datos);
-        document.getElementById(`comentsPostHome${editPostID}`).value = datos.contenido; 
-        
-         //textarea donde se crear el comentario 
-     });
-     document.getElementById('savechanges').innerHTML = `
-     <button  class='btn-likecoment savechanges' id='btn-savechanges' >Guardar Cambios</button>`
-     let btnSave = document.getElementsByClassName('savechanges');
-     for(let i =0; i<btnSave.length; i++){
-        btnSave[i].addEventListener('click', saveEdition);
-     }
-   }
-   
-   const saveEdition = (e) => {
-       var editPostID =  e.currentTarget.getAttribute('id').slice(4);
-       var newPostKey =  e.currentTarget.getAttribute('value');
-       var firebaserefEdit = firebase.database().ref('posts/' + editPostID +'/coment/' + newPostKey);
-       firebaserefEdit.update({
-        coment: contenido.value,
-       });
-   }
-   
+
    
    
    const readComentsHome = (e) => {       
