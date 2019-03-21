@@ -20,12 +20,12 @@
     </header>
     <!-- Finaliza header -->
     <!-- Comienzo navegación -->
-  
+
     <!-- Finaliza Navegación -->
     <!-- Comienzo section -->
 
     <!--Home primera pagina-->
-    <section id="home" >
+    <section id="home">
         <nav id="navbar">
             <div class="nav-wrapper">
                 <ul class="nav justify-content-end">
@@ -41,9 +41,9 @@
                     alt="Apoyamos emprendedores con microcrédito y capacitación" src="https://www.banigualdad.cl/wp-content/uploads/2017/12/logo_web-01.png"></a>
 
         </div>
-        <!--mapa pagina principal-->
-        <div class="map">
-            
+        <!--imagen pagina principal-->
+        <div>
+
         </div>
 
         <!--productos recien agregados-->
@@ -52,31 +52,31 @@
                 <div class="row"> -->
         <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
             <!-- estos dos div hay que analizar para el modal -->
-              
+
             <div class="carousel-inner" role="listbox">
-                    
+
                 <!--First slide-->
-                
-                    <div> 
-                        <h2 id="productsTitle" class="textTitle">Productos Recientemente Agregados</h2>
-                    </div>
-                    
-                    <div class="controls-top">
-                        <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
-                        <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fas fa-chevron-right"></i></a>
-                    </div>
-                    
-                    
-                    <div class="carousel-item active">
-                    
-                            <ol class="carousel-indicators">
-                                    <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
-                                    <li data-target="#multi-item-example" data-slide-to="1"></li>
-                                    <li data-target="#multi-item-example" data-slide-to="2"></li>
-                            </ol>
+
+                <div>
+                    <h2 id="productsTitle" class="textTitle">Productos Recientemente Agregados</h2>
+                </div>
+
+                <div class="controls-top">
+                    <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
+                    <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fas fa-chevron-right"></i></a>
+                </div>
 
 
-                   
+                <div class="carousel-item active">
+
+                    <ol class="carousel-indicators">
+                        <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+                        <li data-target="#multi-item-example" data-slide-to="1"></li>
+                        <li data-target="#multi-item-example" data-slide-to="2"></li>
+                    </ol>
+
+
+
                     <div class="col-md-4">
                         <div class="card mb">
                             <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
@@ -123,7 +123,7 @@
                 <!--/.First slide-->
 
                 <!--Second slide-->
-                
+
                 <div class="carousel-item">
 
                     <div class="col-md-4">
@@ -223,73 +223,86 @@
             <!--/.Slides-->
 
         </div>
-        
 
-        <!-- <div id="more"> -->
-            <input id="moreproduct" type="image" class="moreproduct" src="https://i.ibb.co/Gk4L9s0/shopping-bag-1.png" alt="shopping-bag">
-            </input> 
-            <p class="textmore"> Ver más</p>
-        <!-- </div> -->
 
-        </section>
+        <input id="moreproduct" type="image" class="moreproduct" src="https://i.ibb.co/Gk4L9s0/shopping-bag-1.png" alt="shopping-bag">
+        </input>
+        <p class="textmore"> Ver más</p>
 
-        <!--Vitrina de emprendedores-->
+    </section>
 
-        <section id="viewStore" class="showcase">
+    <!--Vitrina de emprendedores-->
 
-            <div id="search">
-                <form class="form-inline">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
+    <section id="viewStore" class="showcase">
+
+        <div id="search">
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+
+        <div id="selectOption" class="container">
+            <div class="row">
+
+
             </div>
+        </div>
+    </section>
 
-            <div id="selectOption" class="container">
-                <div class="row">
 
-                    
-                </div>
-                </div>
-            </section>
+    </section>
 
 
     <!--Formulario de ingreso para los emprendedores-->
     <section id="login" class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-md-6">
                 <img src="./IMG/logo_banigualdad.png" class="img-responsive" alt="logo Banigualdad">
             </div>
         </div>
-        <div class="row">
-            <div class="col-12 inputs">
+        <div class="row pt-5">
+            <div class="col-12">
                 <div id="loginOrRegister">
-                    <form class="input" action="javascript:void(0)">
-                        <input class="email" id="textEmail" type="email" placeholder="Email usuario">
-                        <input id="password" type="password" placeholder="Contraseña">
-                        <button class="button-iniciar" id="btnSignUp">Iniciar sesión </button>
-                        <button id="registerButton">Registrate</button>
+                    <form action="javascript:void(0)">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input id="textEmail" type="text" class="form-control" placeholder="Ingresa tu email"
+                                aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1"><i class="fas fa-lock"></i></span>
+                            </div>
+                            <input id="password" type="text" class="form-control" placeholder="Ingresa tu contraseña"
+                                aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+
+                        <button type="button" class="btn btn-primary btnSignUp" id="btnSignUp">Ingresar</button>
                         <div class="error" id="error-m"></div>
                     </form>
-                    <p>o inicia sesión con otra cuenta</p>
-                    <div class="row">
-                        <div class="col logos-rrss">
-                            <a class="azul-facebook" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="celeste-twitter" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="rojo-googlemas" href="#"><i class="fab fa-google"></i></a>
-                        </div>
+                    <div class="text-center pb-5">
+                        <p class="h6 pt-3">¿Olvidate tu contraseña?</p>
+                        <a href="">Recuperala aquí</a>
+
+                        <p class="h6 pt-3">¿Aún no eres parte de Banigualdad?</p>
+                        <a href="https://www.banigualdad.cl/" target="_blank">Contáctanos</a>
                     </div>
-                    <p>¿No tienes una cuenta? <a href="#"> Regístrate</a></p>
+                    
                 </div>
             </div>
-        </div>
-        <div>
-            <button class="button-right" id="btnLogout"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</button>
         </div>
     </section>
 
 
     <!--timeline de publicaciones de emprendedores y fundación-->
-    <section id="timeline">
+    <section id="timeline" class="timeline">
+            <div>
+                    <button class="button-right" id="btnLogout"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</button>
+            </div>
         
     </section>
 
@@ -299,19 +312,68 @@
     </section>
 
     <!--Perfil de los emprendedores-->
-    <section id="profile">
-
-    </section>
-
-    <!--Chat- comunicación entre emprendedores y su asesora-->
-    <section id="chat">
-
-    </section>
-
-    <section>
-        <div id="root">
-
+    <section id="profile" class="container section-profile">
+        <div class="card styleCard" style="max-width: 540px;">
+            <div class="row no-gutters">
+                <div class="col-4">
+                    <img src="./IMG/solange-cspedes.jpg" class="card-img imgProfile" alt="imagen de perfil">
+                </div>
+                <div class="col-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Solange Céspedes</h5>
+                        <p class="card-text">“Manteniendo la tradición en Pomaire”</p>
+                    </div>
+                </div>
+            </div>
         </div>
+        <div class="row mt-3">
+            <div class="col colReview m-2">
+                <div class="pt-3 pb-5">
+                    <h6>Mi historia</h6>
+                    <p>
+                        Tengo mi taller y además tengo un local donde vendo lo que yo misma fabrico. Antes yo solo
+                        abastecía
+                        locales
+                        y no ganaba mucho dinero, incluso pensé en dejarlo al ver mi situación económica. Un día me
+                        topé con una
+                        amiga
+                        que pertenecía a la Fundación que me invitó a participar.
+                    </p>
+                    <h6>Ubicación</h6>
+                    <p>
+                        Pomaire 1234
+                    </p>
+                    <h6>Horario</h6>
+                    <p>
+                        lunes a viernes 09:00-16:00 hrs.
+                    </p>
+                    <h6>Quiero que me contacten por:</h6>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
+                            checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Teléfono
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Correo
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1"
+                            checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Facebook
+                        </label>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-md float-right">Editar mi perfil</button>
+                </div>
+
+            </div>
+        </div>
+
     </section>
     <!-- Finaliza section -->
     <!-- Comienzo footer -->
@@ -346,6 +408,5 @@
     <script src="./JS/index.js" type="module"></script>
     <script src="./JS/main.js" type="module"></script>
     <script src="./JS/auth.js" type="module"></script>
-
 
 </body>
