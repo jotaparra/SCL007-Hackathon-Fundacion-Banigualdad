@@ -1,3 +1,4 @@
+
 import {checkAuthState, registerUser, loginUserWithEmail, signOut} from './auth.js';
 window.onload = () =>{     
       checkAuthState((user) => {
@@ -9,6 +10,7 @@ window.onload = () =>{
             // document.getElementById('btnLogout').style.display = "none";
          }   
       });
+
 }
 //Registrar usuario (email y contraseña)
 /* const registerWithEmailAndPassword = () => {
@@ -48,4 +50,4 @@ document.getElementById('moreproduct').addEventListener('click', () =>{
 })
 
 
-  
+
