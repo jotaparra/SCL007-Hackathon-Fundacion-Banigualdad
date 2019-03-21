@@ -1,11 +1,8 @@
 /* estilos del login */
 .container {
-    display: grid;
     justify-content: center;
 }
-img.img-responsive {
-    margin: auto
-}
+
 
 .btnSignUp{
     width: 100%;
@@ -26,9 +23,25 @@ img.img-responsive {
     transition: 0.4s;
 }
 
+#login{
+    display: block;
+}
+
+.img-responsive{
+
+  margin: 0 auto;
+  display: flex;
+ 
+}
 
 
-/* pagina principal/vitrina */
+
+
+/* pagina principal */
+
+.imagecoverpage{
+    width: 100%;
+}
 
 #navbar{
     background-color: #0082d8;
@@ -51,12 +64,16 @@ img.img-responsive {
 }
 
 #shopping-bag{
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     justify-content: center;
     margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
    
 }
+
 
 img.card-img-top{
     height: 100%;
@@ -66,6 +83,109 @@ div.card mb-2{
     height: 100%;
     max-height: 600px;
 }
+#viewStore{
+    display:none;
+
+}
+
+
+#search{
+    text-align: center;
+ }
+ 
+ .btn-outline-secondary {
+     color: #74c75b;
+     border-color: #74c75b;
+ }
+ 
+ #selectOption{
+     margin-top: 1.2rem;
+ }
+ 
+ select#inputGroupSelect04.custom-select{
+     width: 200px;
+ }
+
+ #moreProducts{
+     font-size: 1.5rem;
+     font-family: sans-serif;
+     color: #0082d8;
+     text-align: center;
+ }
+
+
+input.form-control.form-control-sm.mr-3.w-75{
+    width: 4rem;
+    margin: 1rem;
+}
+
+/* productos y servicios */
+
+.post-icon{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+
+.img-product{
+    width: 100px;
+}
+/* termino de productos y servicios */
+
+#search{
+    float:right
+}
+
+select.browser-default.custom-select{
+    width: 20rem;
+    margin: 1rem;
+}
+
+i.fas.fa-search{
+     color: #0082d8;
+     
+}
+ 
+
+.carousel-item{
+    display: flex;
+    position: relative;
+}
+
+.textTitle, .controls-top{
+    text-align: center;
+}
+
+#more{
+    display: flex;
+    
+}
+
+.moreproduct{
+    position: relative;
+    text-align: center;
+    left: 40%;
+    top: 40px;
+}
+
+
+.textmore{
+    position: relative;
+    top: 50px;
+    left: 40%;
+}
+/*Escondiendo home para trabajar en viewStore*/
+/*#home{
+    display: none;
+}*/
+
+/* vitrina */
+
+.lisProduct{
+    display: block;
+}
+
 
 /* perfil */
 .section-profile{
@@ -86,8 +206,431 @@ div.card mb-2{
     background-color: #ffffff;
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.08)!important;
     border-radius: 10px;
+}
+
+#profile{
+    display: none;
 
 }
 
 /* footer */
+
+ /* timeline */
+
+ .timeline{
+     display: none;
+ }
+
+img.card-img-top{
+    height: 100%;
+    max-height: 200px;
+}
+
+
+/* pagina timeline and other YOyi's css*/
+
+.icons-footer{
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    
+  }
+  .icons-footer a{
+    color: #666;
+
+  }
+  .icons-footer a:focus,
+  .icons-footer a:hover{
+    color: #884EA0;
+  }
+
+  .active{
+    color: #884EA0;
+  }
+
+  .boxicon_nav{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+  }
+  footer{
+    background-color: #f2f2f2;
+    width: 100%;
+    position: fixed;
+    clear: both;
+    height:140px;
+    margin-top: 0px;
+    padding-top: 10px;
+    overflow: visible;
+    top:90%;
+    z-index: 100;
+ 
+
+  }
+
+  .footericons{
+    display:none;
+  }
+
+  #index_page{
+    margin-bottom: 100px;
+    margin-top: 30px;
+  }
+ .font-footer{
+  text-align: center;
+  margin-top: 20px;
+   color:#8d57a1;
+ }
+.text-login{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.red{
+  color:red;
+}
+
+.comentar-post{
+  margin-top:10px;
+border: 1px solid purple;
+padding:5px;
+text-align: left;
+}
+.comentar-post p{
+
+padding:5px;
+
+}
+/*** CARD STLES  for Timeline ***/
+
+.cards-container{
+
+  max-width: 100%;
+  margin: 2rem auto;
+}
+
+
+.card-one{
+  position: relative;
+  width: 80%;
+  margin: 10%;
+  background: #fff;
+  box-shadow: 0 0 60px 2px rgba(0,0,0,.10);
+
+} 
+.header_card{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background-color:#884EA0; 
+   }
+    
+.header_card::before, .header_card::after{
+      content: '';
+      position: absolute;
+      top: 0;bottom: 0;left: 0;right: 0;
+      background: inherit;
+    }
+.header_card::before{
+      -webkit-transform: skewY(-8deg);
+      -moz-transform: skewY(-8deg);
+      -ms-transform: skewY(-8deg);
+      -o-transform: skewY(-8deg);
+      transform: skewY(-8deg);
+      -webkit-transform-origin: 100% 100%;
+      -moz-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+      -o-transform-origin: 100% 100%;
+      transform-origin: 100% 100%;
+    }
+.header_card::after{
+      -webkit-transform: skewY(8deg);
+      -moz-transform: skewY(8deg);
+      -ms-transform: skewY(8deg);
+      -o-transform: skewY(8deg);
+      transform: skewY(8deg);
+      -webkit-transform-origin: 0 100%;
+      -moz-transform-origin: 0 100%;
+      -ms-transform-origin: 0 100%;
+      -o-transform-origin: 0 100%;
+      transform-origin: 0 100%;
+    }
+.avatar{
+      position: absolute;
+      left: 50%;
+      top: 30px;
+      margin-left: -50px;
+      z-index: 5;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      overflow: hidden;
+      background: #c8c;
+      border:3px solid #fff;}
+.avatar img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 100px;
+        height: auto;
+      }
+    
+ .info-user-p{
+    position: relative;
+    margin: 80px 0 30px;
+    text-align: center;}
+.info-user-p::after{
+      content: '';
+      position: absolute;
+      bottom: -15px;
+      left: 50%;
+      margin-left: -15px;
+      width: 30px;
+      height: 1px;
+      background: #000;
+    }
+  
+.desc{
+    padding: 0 1rem 2rem;
+    text-align: center;
+    line-height: 1.5;
+    color: #777;
+  }
+ .contacts{
+    width: 200px;
+    max-width: 100%;
+    margin: 0 auto 3rem;}
+.contacts   a{
+      display: block;
+      width: 33.333333%;
+      float: left;
+      text-align: center;
+      color:#c8c ;}
+
+.contacts   a:hover{
+        color: #333;}
+
+  
+  .footer_card{
+    position: relative;
+    padding: 1rem;
+    background-color:#884EA0;
+    text-align: center;}
+
+.footer_card a{
+      padding: 0 1rem;
+      color: #e2e2e2;
+      -webkit-transition: color .4s;
+      -moz-transition: color .4s;
+      -ms-transition: color .4s;
+      -o-transition: color .4s;
+      transition: color .4s;
+    }
+.footer_card a:hover{
+        color:#c8c;
+      }
+
+.footer_card::before{
+      content: '';
+      position: absolute;
+      top: -27px;
+      left: 50%;
+      margin-left: -15px;
+      border: 15px solid transparent;
+      border-bottom-color: #884EA0;
+    }
+
+    #addpost_container{
+      display: none;
+    }
+    #recipes_container{
+      display: none;
+      margin-bottom: 50px;
+    }
+    #profile_container{
+      display: none;
+      margin-bottom: 50px;
+    }
+    #search_container{
+      display: none;
+      margin-bottom: 50px;
+    }
+    .savebiograph{
+
+      font-family: "Roboto", sans-serif;
+      text-transform: uppercase;
+      outline: 0;
+      background:rgb(146, 100, 165);
+      width: 50%;
+      border: 0;
+      padding: 10px;
+      color: #FFFFFF;
+      font-size: 12px;
+      -webkit-transition: all 0.3 ease;
+      transition: all 0.3 ease;
+      cursor: pointer;
+    }
+    
+    
+    
+    .box_text{
+    
+      width: 90%;
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-bottom: 60px;
+      background: #fff;
+      box-shadow: 0 0 20px 2px rgba(0,0,0,.10);
+      padding: 8px;
+      border: 1px solid #ae71e6;
+      position: relative;
+    } 
+    .box-header{
+        width: 100%;
+        height: 80px;
+        background-color: #8ac53f80;
+    }
+    .name-post {
+      margin-left: 100px;
+      font-size: 26px;
+      color: #fff;
+      padding-top: 15px;
+    }
+
+    .name-post2{
+      font-size: 14px;
+      color:#fff;
+      padding: 10px;
+      text-align: center;
+    }
+    .box-header2{
+      width: 100%;
+      height: 60px;
+      background-color: rgb(146, 100, 165); 
+  }  
+       .avatar_post{
+        position: absolute;
+        left: 5%;
+        top: -7px;
+        margin-left: -54px;
+        z-index: 5;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+        background: #c8c;
+        border: 3px solid #fff;}
+
+    .avatar_post img{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -moz-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          width: 100px;
+          height: auto;
+        }  
+       .box-content{
+         padding: 15px 5px;
+       } 
+    
+       .box-buttons{
+        position: relative;
+        padding: 1rem;
+        text-align: center;}
+    
+    
+        .btn-likecoment{
+       font-family: "Roboto", sans-serif;
+          text-transform: uppercase;
+          outline: 0;
+          background:rgb(146, 100, 165);
+          width: 100%;
+          border: 0;
+          padding: 10px;
+          color: #FFFFFF;
+          font-size: 12px;
+          -webkit-transition: all 0.3 ease;
+          transition: all 0.3 ease;
+          cursor: pointer;
+      
+        }    
+        .icondeskopt{
+          display: none;
+        }
+        .coments-post{
+          width: 100%; 
+          height: 85px;
+        }
+        .coment-post{
+          width: 100%;
+          height: 45px;
+        }
+        .coment-biograph{
+          width: 100%;
+          height: 25px;
+        }
+        #postImgInput{
+          font-size: 12px;
+        }
+
+.img-post{
+  width: 100%;
+ margin-top: 20px;
+ margin-bottom: 20px;
+ padding: 10px;
+
+
+
+}
+
+.contenidopost-img{
+    width: 30%;
+    float:left;
+}
+
+.coment-post{
+  width: 100%;
+  height: 85px;
+  }
+.contenidopost{
+    width: 70%;
+    float:left;
+    padding: 20px;
+
+
+
+}  
+
+.alinear{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#comentPost{
+    width:90%;
+    margin-left:30px;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+
+
+.content{
+    margin-top: 0px;
+}
+ 
+
+.subirproductos{
+    display: none;
+}
 
