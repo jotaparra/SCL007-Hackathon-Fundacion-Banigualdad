@@ -11,12 +11,12 @@ window.onload = () =>{
       });
 }
 //Registrar usuario (email y contraseña)
-const registerWithEmailAndPassword = () => {
+/* const registerWithEmailAndPassword = () => {
    const emailUser = document.getElementById('textEmail').value;
    const passwordUser = document.getElementById('password').value;
    registerUser(emailUser, passwordUser);
-};
-document.getElementById('registerButton').addEventListener('click', registerWithEmailAndPassword);
+}; */
+//document.getElementById('registerButton').addEventListener('click', registerWithEmailAndPassword);
 //Iniciar Sesión correo y contraseña
 const signInWithEmailAndPassword = () => {
    const emailUser = textEmail.value;
