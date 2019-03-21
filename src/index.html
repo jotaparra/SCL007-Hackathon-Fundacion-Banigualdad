@@ -311,9 +311,55 @@
 
     <!--timeline de publicaciones de emprendedores y fundación-->
     <section id="timeline">
-        <div>
-            <button class="button-right" id="btnLogout"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</button>
+        <div> <button class="button-right" id="btnLogout"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</button> </div>
+
+              
+         <section id="index_page">
+           <div class="container">
+              <div class="row">
+           <!-- comentar y publicar -->  
+                <div id="root">
+                <div id="newcoments"><div id="comentPost"></div></div>    
+                </div>
+              </div>
+           </div>
+        </section>
+          
+    <!-- Textarea para publicacion -->
+                       <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Ingresa tu publicación</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
+        <div class="modal-body">
+         <label name="title">Titulo</label>
+            <input type="text" name="titulo" id="tituloaconvalidar" class="text">
+             <label name="title">Hashtags</label>
+             <input type="text" name="hashtags" id="hashtagsPost" class="text" placeholder="Recuerda siempre anteponer #">
+            <label id="fileUpload" for="postImgInput" class="inputTitle">Escoger imagen</label>
+             <input type="file"  id="postImgInput">
+             <label name="subject">Escribe tu Post</label>
+              <textarea name="comentario" id="coments" ></textarea>
+           
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <button id="btnComents" type="button" class="btn btn-primary">Crear Publicacion</button>
+        </div>
+      </div>
+    </div>
+  </div>
+     
+                      <section id="addpost_container">
+                     
+                     
+                      </section>
     </section>
 
     <!--Vitrina de emprendedores y sus productos-->
@@ -338,7 +384,36 @@
     </section>
     <!-- Finaliza section -->
     <!-- Comienzo footer -->
-    <footer>
+ 
+      <!--footer e iconos del timeline -->
+    <footer id="footer_page">
+        <div class="container">
+            <div class="row">
+               
+               <div  class="col icons-footer ">
+                   <a id="index" href="#index_page"><i class="fas fa-home btn-act active"></i></a></div>
+               <div   class="col icons-footer"> 
+                   <a id="search" href="#search_container"><i class="fas fa-search btn-act"></i></a></div>
+               <div class="col icons-footer">
+                 
+                   <a class="add-post" id="addPost" data-toggle="modal" data-target="#myModal"><i class="fas fa-plus-circle btn-act"></i></a>
+                  </div>
+               <div class="col icons-footer"> 
+                   <a id="recipes" href="#recipes_container"><i class="fas fa-utensils btn-act"></i></a></div>
+               <div  class="col icons-footer"> 
+                   <a id="showUser" href="#profile_container"><i  class="fas fa-user-circle btn-act"></i></a> </div>
+                   
+             </div>
+    
+             <div class="row footer-copyright">
+                 <div class="col-4"></div>
+                 <div class="col-4 font-footer">Banigualdad © 2019</div>
+                 <div class="col-4"></div>
+            </div>
+    
+    
+    
+        </div>
 
     </footer>
 
@@ -375,4 +450,4 @@
 
 
 </body>
-
+</html>
