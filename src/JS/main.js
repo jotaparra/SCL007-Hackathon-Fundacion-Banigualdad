@@ -1,4 +1,3 @@
-
 import {checkAuthState, registerUser, loginUserWithEmail, signOut} from './auth.js';
 window.onload = () =>{     
       checkAuthState((user) => {
@@ -48,6 +47,7 @@ document.getElementById('moreproduct').addEventListener('click', () =>{
    document.getElementById('viewStore').style.display='block';
 
 })
+
 
 
 

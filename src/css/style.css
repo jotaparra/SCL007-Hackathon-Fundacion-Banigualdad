@@ -39,6 +39,9 @@
 
 /* pagina principal */
 
+.imagecoverpage{
+    width: 100%;
+}
 
 #navbar{
     background-color: #0082d8;
