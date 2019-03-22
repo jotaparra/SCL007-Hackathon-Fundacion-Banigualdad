@@ -124,6 +124,37 @@ window.onload = () =>{
       document.getElementById('handMade').style.display='none'
       })
 
+      document.getElementById('crafts').addEventListener("click", (event) => {
+         event.preventDefault();
+         document.getElementById('handMade').style.display="block";
+         document.getElementById('serviceCategory').style.display="none";
+         document.getElementById('foodCategory').style.display="none";
+         document.getElementById('terapyAndBeauty').style.display="none";
+      });
+      document.getElementById('service').addEventListener("click", (event) => {
+         event.preventDefault();
+         document.getElementById('handMade').style.display="none";
+         document.getElementById('serviceCategory').style.display="block";
+         document.getElementById('foodCategory').style.display="none";
+         document.getElementById('terapyAndBeauty').style.display="none";
+
+        
+      });
+      document.getElementById('food').addEventListener("click", (event) => {
+         event.preventDefault();
+         document.getElementById('handMade').style.display="none";
+         document.getElementById('serviceCategory').style.display="none";
+         document.getElementById('foodCategory').style.display="block";
+         document.getElementById('terapyAndBeauty').style.display="none";
+      });
+      document.getElementById('therapy').addEventListener("click", (event) => {
+         event.preventDefault();
+         document.getElementById('handMade').style.display="none";
+         document.getElementById('serviceCategory').style.display="none";
+         document.getElementById('foodCategory').style.display="none";
+         document.getElementById('terapyAndBeauty').style.display="block";
+      });
+
    }
 
 

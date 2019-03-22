@@ -645,3 +645,33 @@ padding:5px;
 
 .left
 {float: left;}
+
+
+#produc-list{
+    padding: 1rem;
+}
+#iconList{
+    float:right;
+    margin-top: 1.5rem;
+}
+.iconList{
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+/* estilos vitrina individual */
+.perfilVitrina{
+    background-color: #ffffff;
+}
+
+.divDatos{
+    border-radius:4px!important;
+    margin-top: 10px;
+    border: 1px solid#e5e5e5;
+}
+.azulBanigualdad{
+    color:#0082d8; 
+}
+
+/* termino estilo vitrina individual */
