@@ -24,7 +24,7 @@
 }
 
 #login{
-    display: block;
+    display: none;
 }
 
 .img-responsive{
@@ -38,6 +38,11 @@
 
 
 /* pagina principal */
+
+.btn1{
+    width: 80px;
+    margin: 1%;
+}
 
 .imagecoverpage{
     width: 100%;
@@ -83,7 +88,7 @@ div.card mb-2{
     height: 100%;
     max-height: 600px;
 }
-#viewStore{
+#serviceCategory, #foodCategory, #handMade, #terapyAndBeauty{
     display:none;
 
 }
@@ -117,6 +122,12 @@ div.card mb-2{
 input.form-control.form-control-sm.mr-3.w-75{
     width: 4rem;
     margin: 1rem;
+}
+
+.btncategory{
+left: 15%;
+display: inline;
+position: relative;
 }
 
 /* productos y servicios */
@@ -175,10 +186,7 @@ i.fas.fa-search{
     top: 50px;
     left: 40%;
 }
-/*Escondiendo home para trabajar en viewStore*/
-/*#home{
-    display: none;
-}*/
+
 
 /* vitrina */
 
@@ -190,6 +198,7 @@ i.fas.fa-search{
 /* perfil */
 .section-profile{
     background-color:#e5e5e5;
+    display: none;
 }
 .imgProfile{
     width: 100px;
@@ -217,8 +226,8 @@ i.fas.fa-search{
 
  /* timeline */
 
- .timeline{
-     display: none;
+ .timeLine{
+     display: block;
  }
 
 img.card-img-top{

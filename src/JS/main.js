@@ -12,7 +12,115 @@ window.onload = () =>{
          }   
       });
 
-}
+      document.getElementById('linkEmprendedor').addEventListener('click', () =>{
+         checkAuthState()
+         document.getElementById('login').style.display='block';
+         document.getElementById('home').style.display='none';
+         document.getElementById('timeline').style.display='none';
+         document.getElementById('profile').style.display='none';
+         document.getElementById('serviceCategory').style.display='none';
+         document.getElementById('foodCategory').style.display='none';
+         document.getElementById('handMade').style.display='none';
+         document.getElementById('terapyAndBeauty').style.display='none';
+      
+      })
+
+      document.getElementById('btnshowcase').addEventListener('click', ()=>{
+         document.getElementById('home').style.display='none';
+         document.getElementById('timeline').style.display='none';
+         document.getElementById('profile').style.display='none';
+         document.getElementById('serviceCategory').style.display='block';
+         document.getElementById('foodCategory').style.display='block';
+         document.getElementById('handMade').style.display='block';
+         document.getElementById('terapyAndBeauty').style.display='block';
+      })
+
+      document.getElementById('btntimeline').addEventListener('click', () =>{
+         document.getElementById('timeline').style.display='block';
+         document.getElementById('home').style.display='none';
+         document.getElementById('profile').style.display='none';
+         document.getElementById('products').style.display='none';
+         document.getElementById('serviceCategory').style.display='none';
+         document.getElementById('foodCategory').style.display='none';
+         document.getElementById('handMade').style.display='none';
+         document.getElementById('terapyAndBeauty').style.display='none';
+
+      })
+
+      document.getElementById('addproducts').addEventListener('click', ()=>{
+         document.getElementById('products').style.display='block';
+         document.getElementById('home').style.display='none';
+         document.getElementById('timeline').style.display='none';
+         document.getElementById('profile').style.display='none';
+         ocument.getElementById('serviceCategory').style.display='none';
+         document.getElementById('foodCategory').style.display='none';
+         document.getElementById('handMade').style.display='none';
+         document.getElementById('terapyAndBeauty').style.display='none';
+      })
+
+      document.getElementById('btnprofile').addEventListener('click', ()=>{
+         document.getElementById('products').style.display='none';
+         document.getElementById('home').style.display='none';
+         document.getElementById('timeline').style.display='none';
+         document.getElementById('profile').style.display='block';
+         ocument.getElementById('serviceCategory').style.display='none';
+         document.getElementById('foodCategory').style.display='none';
+         document.getElementById('handMade').style.display='none';
+         document.getElementById('terapyAndBeauty').style.display='none';
+      })
+
+      document.getElementById('service').addEventListener('click', ()=>{
+      document.getElementById('serviceCategory').style.display='block';
+      document.getElementById('home').style.display='none';
+      
+      })
+
+      document.getElementById('therapy').addEventListener('click', ()=>{
+      document.getElementById('terapyAndBeauty').style.display='block';
+      document.getElementById('home').style.display='none';
+         
+      })
+
+      document.getElementById('food').addEventListener('click', ()=>{
+      document.getElementById('foodCategory').style.display='block';
+      document.getElementById('home').style.display='none';
+            
+      })
+
+      document.getElementById('crafts').addEventListener('click', ()=>{
+      document.getElementById('handMade').style.display='block';
+      document.getElementById('home').style.display='none';
+               
+      })
+
+      document.getElementById('btnhome').addEventListener('click', () =>{
+      document.getElementById('home').style.display='block';
+      document.getElementById('login').style.display='none'
+      })
+      
+      document.getElementById('btnhome1').addEventListener('click', () =>{
+      document.getElementById('home').style.display='block';
+      document.getElementById('serviceCategory').style.display='none'
+      })
+
+      document.getElementById('btnhome2').addEventListener('click', () =>{
+      document.getElementById('home').style.display='block';
+      document.getElementById('foodCategory').style.display='none'
+      })
+
+      document.getElementById('btnhome3').addEventListener('click', () =>{
+      document.getElementById('home').style.display='block';
+      document.getElementById('handMade').style.display='none'
+      })
+
+      document.getElementById('btnhome4').addEventListener('click', () =>{
+      document.getElementById('home').style.display='block';
+      document.getElementById('terapyAndBeauty').style.display='none'
+      })
+
+   }
+
+
 
 //Registrar usuario (email y contraseña)
 const registerWithEmailAndPassword = () => {
@@ -21,7 +129,7 @@ const registerWithEmailAndPassword = () => {
    registerUser(emailUser, passwordUser);
 
 };
-// document.getElementById('registerButton').addEventListener('click', registerWithEmailAndPassword);
+document.getElementById('registerButton').addEventListener('click', registerWithEmailAndPassword);
 
 
 //Iniciar Sesión correo y contraseña
@@ -367,10 +475,8 @@ const printLikes =(key, uid) =>{
         <div class='col-4 col-m-2'></div>
         </div>
         </div>
-               `; 
-               
-      document.getElementById('btn-logout').addEventListener('click', logOut)
-      document.getElementById(`btnSaveBiography${userInfo.uid}`).addEventListener('click', saveBiography)
+               `; document.getElementById('btn-logout').addEventListener('click', logOut)
+                  document.getElementById(`btnSaveBiography${userInfo.uid}`).addEventListener('click', saveBiography)
        }     
        
    
@@ -464,12 +570,7 @@ const printLikes =(key, uid) =>{
 
 // mostrar section login
 
-document.getElementById('linkEmprendedor').addEventListener('click', () =>{
-   checkAuthState()
-   document.getElementById('login').style.display='block';
-   document.getElementById('home').style.display='none';
 
-})
 
 document.getElementById('moreproduct').addEventListener('click', () =>{
 
@@ -477,6 +578,7 @@ document.getElementById('moreproduct').addEventListener('click', () =>{
    document.getElementById('viewStore').style.display='block';
 
 })
+
 
 
 

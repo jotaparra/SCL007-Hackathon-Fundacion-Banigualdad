@@ -13,8 +13,8 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous">
-    <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> -->
-    <!-- <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script> -->
+    <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">  -->
+    <!-- <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>  -->
     <title>Fundación Banigualdad</title>
 </head>
 
@@ -24,10 +24,6 @@
 
     </header>
     <!-- Finaliza header -->
-    <!-- Comienzo navegación -->
-
-    <!-- Finaliza Navegación -->
-    <!-- Comienzo section -->
 
     <!--Home primera pagina-->
     <section id="home">
@@ -46,7 +42,7 @@
                     alt="Apoyamos emprendedores con microcrédito y capacitación" src="https://www.banigualdad.cl/wp-content/uploads/2017/12/logo_web-01.png"></a>
 
         </div>
-        <img src="img/Group5.png" alt="img/Group5.png" class="imagecoverpage">
+        <img src="img/banner.png" alt="img/banner.png" class="imagecoverpage">
         <div>
 
         </div>
@@ -216,24 +212,29 @@
       <!--/.Slides-->
 
     </div>
-    <!--/.Carousel Wrapper-->
-    <!--ver más- ir a tienda-->
-    <div id="more">
-      <a href="" class="icon col-xs-3 col-sm-4">
-        <img id="shopping-bag" src="https://i.ibb.co/Gk4L9s0/shopping-bag-1.png" alt="shopping-bag">
-      </a>
-      <p>Ver más</p>
-    </div>
+    
+    <!--botones con tipo de productos-->
+    <div class="btncategory">
 
-
+        <input id="service"  type="image" class="btn1" src="./img/servicios.png" alt="./img/servicios.png"> </input>
+        <input id="therapy" type="image" img class="btn1"src="./img/terapiaybelleza.png" alt="./img/terapiaybelleza.png"></input>
+        <input id = "food" type="image"  class="btn1" src="./img/comida.png" alt="./img/comida.png"> </input>
+        <input id = "crafts" type="image" class="btn1"src="./img/manualidades.png" alt="./img/manualidades.png"></input>
+        <input type="image" class="btn1"src="./img/obsequios.png" alt="./img/obsequios.png"></input>
+        <input type="image" class="btn1"src="./img/ropa.png" alt="./img/ropa.png"></input>
+        
+       
     </div>
+    
+
+    </section>
 
     <!--Formulario de ingreso para los emprendedores-->
 
     <section id="login" class="container">
         <div class="row">
             <div class="col-md-6">
-                <img src="./IMG/logo_banigualdad.png" class="img-responsive" alt="logo Banigualdad">
+                <input id="btnhome" type="image" src="./IMG/logo_banigualdad.png" class="img-responsive" alt="logo Banigualdad"> </input>
             </div>
         </div>
         <div class="row pt-5">
@@ -276,8 +277,8 @@
     <!--timeline de publicaciones de emprendedores y fundación-->
   
   
-    <section id="timeline">
-        <div> <button class="button-right" id="btnLogout"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</button> </div>
+    <section id="timeline" class="timeLine">
+       
 
               
          <section id="index_page">
@@ -293,58 +294,52 @@
           
     <!-- Textarea para publicacion -->
                        <!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">Ingresa tu publicación </h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <!-------formulario publicaciones---->
-          <form>
-            <div class="form-group">
-            <label for="exampleInputEmail1" name="title">Titulo</label>
-            <input type="email" class="form-control" name="titulo" id="tituloaconvalidar">
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Ingresa tu publicación </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                <!-------formulario publicaciones---->
+                <form>
+                    <div class="form-group">
+                    <label for="exampleInputEmail1" name="title">Titulo</label>
+                    <input type="email" class="form-control" name="titulo" id="tituloaconvalidar">
+                    </div>
+
+                    <div class="form-group">
+                    <label for="exampleFormControlSelect1">Canales de Difusion</label>
+                    <select class="form-control" id="hashtagsPost" >
+                        <option>BanIgualdad</option>
+                        <option>Santiago</option>
+                        <option>Zona Norte</option>
+                        <option>Zona Central</option>
+                        <option>Zona Sur</option>
+                    </select>
+                    </div>
+
+                    <div class="form-group">
+                    <label id="fileUpload" for="postImgInput" class="inputTitle">Escoger imagen</label>
+                    <input type="file" class="form-control-file"   id="postImgInput">
+                    </div>
+
+                    <div class="form-group">
+                    <label for="exampleFormControlTextarea1" name="subject">Escribe tu Post</label>
+                    <textarea class="form-control" name="comentario" id="coments" ></textarea>
+                    </div>  
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                <button id="btnComents" type="button"   data-dismiss="modal" class="btn btn-primary">Crear Publicacion</button>
+                </div>
             </div>
-
-            <div class="form-group">
-            <label for="exampleFormControlSelect1">Canales de Difusion</label>
-            <select class="form-control" id="hashtagsPost" >
-                <option>BanIgualdad</option>
-                <option>Santiago</option>
-                <option>Zona Norte</option>
-                <option>Zona Central</option>
-                <option>Zona Sur</option>
-              </select>
             </div>
-
-            <div class="form-group">
-            <label id="fileUpload" for="postImgInput" class="inputTitle">Escoger imagen</label>
-            <input type="file" class="form-control-file"   id="postImgInput">
-            </div>
-
-            <div class="form-group">
-             <label for="exampleFormControlTextarea1" name="subject">Escribe tu Post</label>
-             <textarea class="form-control" name="comentario" id="coments" ></textarea>
-            </div>  
-            </form>
-
         </div>
-        <div class="modal-footer">
-          <button id="btnComents" type="button"   data-dismiss="modal" class="btn btn-primary">Crear Publicacion</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-        <div>
-            <button class="button-right" id="btnLogout"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</button>
-        </div>
-
     </section>
 
     <!--Vitrina de emprendedores y sus productos-->
@@ -355,6 +350,7 @@
         
 
         <div id="serviceCategory">
+        <input id="btnhome1" type="image" src="./IMG/logo_banigualdad.png" class="img-responsive" alt="logo Banigualdad"> </input>
             <!-- Card deck -->
             <div class="card-deck">
 
@@ -451,6 +447,7 @@
         <!--Aquí termina categoria servicios-->
 
         <div id="foodCategory">
+                <input id="btnhome2" type="image" src="./IMG/logo_banigualdad.png" class="img-responsive" alt="logo Banigualdad"> </input>
             <!-- Card deck -->
             <div class="card-deck">
 
@@ -543,6 +540,7 @@
         </div>
 
         <div id="handMade">
+                <input id="btnhome3" type="image" src="./IMG/logo_banigualdad.png" class="img-responsive" alt="logo Banigualdad"> </input>
             <!-- Card deck -->
             <div class="card-deck">
 
@@ -635,6 +633,7 @@
         </div>
 
         <div id="terapyAndBeauty">
+                <input id="btnhome4" type="image" src="./IMG/logo_banigualdad.png" class="img-responsive" alt="logo Banigualdad"> </input>
             <!-- Card deck -->
             <div class="card-deck">
 
@@ -789,22 +788,21 @@
                         </label>
                     </div>
                     <button type="button" class="btn btn-primary btn-md float-right">Editar mi perfil</button>
+                    <button class="button-right" id="btnLogout"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</button>
                 </div>
 
             </div>
         </div>
 
-
-
     </section>
+
     <!-- agregar productos-->
+
+
     <section id="products" class="section-profile">
+
         <div class="container">
-            <div class="row p-5">
-                <div class="col">
-                    <button type="button" class="btn btn-primary px-5" data-toggle="modal" data-target="#modalproductos">Agregar</button>
-                </div>
-            </div>
+           
             <div class="row p-2">
                 <div class="col text-center">
                     <h5>Productos agregados a la vitrina</h5>
@@ -894,8 +892,11 @@
                     </div>
                 </div>
             </div>
-
-            <!-- termina modal -->
+            <div class="row p-5">
+                    <div class="col">
+                        <button type="button" class="btn btn-primary px-5" data-toggle="modal" data-target="#modalproductos">Agregar</button>
+                    </div>
+            </div>
 
         </div>
 
@@ -910,13 +911,13 @@
                
                <div  class="col icons-footer">
                    <a id="index" href="#timeline">
-                   <i class="fas fa-home btn-act active"></i>
+                   <i id="btntimeline" class="fas fa-home btn-act active"></i>
                    </a>
               </div>
 
                <div class="col icons-footer"> 
                     <a id="search" href="#viewStore">
-                    <i class="fas fa-shopping-bag"></i>
+                    <i id= "btnshowcase" class="fas fa-shopping-bag"></i>
                     </a>
                </div>
 
@@ -928,13 +929,13 @@
 
                <div class="col icons-footer"> 
                    <a id="recipes" href="#addProductos">
-                      <i class="fas fa-cart-plus"></i>
+                      <i id="addproducts" class="fas fa-cart-plus"></i>
                    </a>
               </div>
 
                <div  class="col icons-footer"> 
                    <a id="showUser" href="#profile">
-                   <i  class="fas fa-user-circle btn-act"></i>
+                   <i  id="btnprofile" class="fas fa-user-circle btn-act"></i>
                    </a> 
               </div>          
       </div>
