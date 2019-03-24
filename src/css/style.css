@@ -254,9 +254,6 @@ img.card-img-top{
     color: #884EA0;
   }
 
-  .active{
-    color: #884EA0;
-  }
 
   .boxicon_nav{
       display: flex;
@@ -675,3 +672,13 @@ padding:5px;
 }
 
 /* termino estilo vitrina individual */
+
+/* ultimos estilos */
+.imglogo img {
+    width: 100px;
+    
+}
+
+.white {
+    color: #FFFFFF!important;
+}
